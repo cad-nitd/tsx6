@@ -1,4 +1,3 @@
-
 .cadlogo {
     width: 100px;
     height: auto;
@@ -38,9 +37,7 @@
     bottom: 30vh !important;
 }
 
-#tec {
-    
-}
+#tec {}
 
 #hnoshine {
     color: #ffc861;
@@ -53,7 +50,7 @@
 
 .overlay-btn {
     position: absolute;
-    bottom: 15vh;
+    bottom: 13vh;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -68,23 +65,23 @@
     z-index: 200;
     border-radius: 0%;
     background: transparent !important;
-    border: 2px dashed #FFC861 !important;
-    color: gainsboro;
+    border: 2px dashed #e8a11c !important;
+    color: #e8a11c;
     font-family: Montserrat;
-    font-size: 10pt;
-    letter-spacing: 5px;
+    font-size: 11pt;
+    letter-spacing: 3px;
     padding: 10px 20px !important;
     /*    padding-top: 15px !important;*/
     /*    padding-bottom: 15px !important;*/
     text-decoration: none;
-    transition: all 0.2s;
+    transition: all 0.25s;
 }
 
 .overlay-btn:hover {
     text-decoration: none !important;
-    background: #ffc861 !important;
+    background: #e8a11c !important;
     /*    border: 2px solid gainsboro !important;*/
-    color: #ff7344;
+    color: white;
 }
 
 
@@ -103,39 +100,45 @@
 
 
 /*========= MEMBER ======*/
+
+
 /*
 .bg-4{
     overflow-x: hidden ;
     overflow-y: auto ;
 }
 */
-.stylemeb{
+
+.stylemeb {
     font-size: 9pt;
-    font-family:
-        
-        Montserrat;
-    
-    color:#962900;
+    font-family: Montserrat;
+    color: #962900;
     line-height: 0px;
 }
-.mebname{
-    font-size:12pt;
+
+.mebname {
+    font-size: 12pt;
     font-family: Montserrat;
-    margin-top:10px;
-    color:#962900;
+    margin-top: 10px;
+    color: #962900;
 }
-.mebimg{
-    width:100px; height:auto;
+
+.mebimg {
+    width: 100px;
+    height: auto;
 }
+
 #member-heading {
     background: #ff885c;
 }
 
-#imgsize img{
-    width:50px !important;
-    height:50px !important;
-    margin-top:20px !important;
+#imgsize img {
+    width: 50px !important;
+    height: 50px !important;
+    margin-top: 20px !important;
 }
+
+
 /*========SPONSOR===========*/
 
 .banner-heading {
@@ -163,6 +166,7 @@
 
 
 /*======== CONTACT ============*/
+
 .bg-6 {
     overflow-x: hidden;
     overflow-y: auto;
@@ -172,9 +176,13 @@
     background: #0288D1;
 }
 
-#map {
+#map-row {
     height: 50vh;
     width: 100vw;
+}
+
+#map {
+    height: 100%;
 }
 
 .contacts-box {
@@ -189,6 +197,7 @@
     height: calc(100vh - 50vh - 40px - 76pt);
 }
 
+
 /*
 .contact-icon {
     height: 50%;
@@ -200,10 +209,12 @@
     height: 50%;
 }
 */
-.social a{
+
+.social a {
     font-size: 40px;
-    color:white;
+    color: white;
 }
+
 .contact-desc p {
     font-size: 10pt;
 }
@@ -220,24 +231,28 @@
     color: dodgerblue;
 }
 
+
 /*
 .footdis {
     margin-top: 20px;
     height: 50%;
 }
 */
+
 .social {
     transition: background 0.2s;
     height: 100%;
 }
+
 .social:hover {
     background: #171717;
-/*    height: 100vh;*/
-    color:white;
+    /*    height: 100vh;*/
+    color: white;
 }
 
 
 /*========== ROTATE HEADING ======*/
+
 .rotate {
     width: 100vw;
     position: absolute;
@@ -246,9 +261,11 @@
     transform: translateY(-50%);
     perspective: 1200px;
 }
+
 .heading {
     transform-style: preserve-3d;
 }
+
 .heading-bubble {
     z-index: -1;
     position: absolute;
@@ -269,11 +286,11 @@
     overflow: visible;
     font-family: Bangers;
     font-size: 90pt;
-    letter-spacing: 10px;    
+    letter-spacing: 10px;
     text-align: center;
     color: #ffc861;
     transform-style: preserve-3d;
-/*    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);*/
+    /*    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);*/
     /*display: none;*/
 }
 
@@ -283,7 +300,6 @@
         width: 90vw;
         margin-top: 20px;
     }
-    
     .contacts-box {
         height: auto;
     }

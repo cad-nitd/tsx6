@@ -12,8 +12,6 @@ window.onload = function () {
                 el: el,
                 transform: transform
             });
-
-            console.log(transform);
         });
     }
 
@@ -36,7 +34,6 @@ window.onload = function () {
             rotatey = -((y - midy) / midy) * ydeg;
 
         robjs.forEach(function (robj) {
-            console.log(robj.transform);
             robj.el.style.transform = robj.transform + " rotateY(" + rotatex + "deg) rotateX(" + rotatey + "deg)";
         });
     }
