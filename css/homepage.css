@@ -39,7 +39,7 @@
 }
 
 #tec {
-    color: #ff885c;
+    
 }
 
 #hnoshine {
@@ -48,6 +48,7 @@
 
 #x6 {
     color: #466d93;
+    color: #ff885c;
 }
 
 .overlay-btn {
@@ -236,6 +237,45 @@
 }
 
 
+/*========== ROTATE HEADING ======*/
+.rotate {
+    width: 100vw;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    perspective: 1200px;
+}
+.heading {
+    transform-style: preserve-3d;
+}
+.heading-bubble {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100vw;
+    height: 500px;
+    background: url("../images/bubbles/bubble.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50% 100px;
+    transform: translateY(-50%) translateZ(-100px);
+}
+
+.heading-text {
+    overflow: visible;
+    font-family: Bangers;
+    font-size: 90pt;
+    letter-spacing: 10px;    
+    text-align: center;
+    color: #ffc861;
+    transform-style: preserve-3d;
+/*    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);*/
+    /*display: none;*/
+}
 
 @media screen and (max-width:750px) {
     iframe {
