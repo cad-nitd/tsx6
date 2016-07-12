@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>multiscroll.js - split multi-scrolling pages plugin</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="multiscroll plugin by Alvaro Trigo. Create divided multi-scrolling pages with two splited vertical layouts or panels." />
+    <meta name="keywords" content="multiscroll,jquery,alvaro,trigo,plugin,divided,splitscreen,screen,panels,layouts,vertical,split,splited" />
+    <meta name="Resource-type" content="Document" />
+    <!--    bootstrap links-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--end link bootstrap link -->
+    <link rel="stylesheet" type="text/css" href="css/online.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Bangers' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="js/jquery.multiscroll.js"></script>
+
+    <script type="text/javascript">
+        var colors = ['#1bfdec', '#DAEFB3', '#EF8354', '#ffd778', '#F0F7F4', 'gainsboro'];
+        $(document).ready(function () {
+            $('#myContainer').multiscroll({
+                //sectionsColor: ['transparent', 'transparent', 'white','white','white','white'],
+                anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth'],
+                menu: '#menu',
+                easing: 'easeInOutCubic',
+                onLeave: function (index, nextIndex, direction) {
+                    //console.log(index+" "+nextIndex+" "+direction);;
+                    document.body.style.backgroundColor = colors[nextIndex - 1];
+                }
+            });
+        });
+    </script>
+
+    <style>
+        .ms-section {
+            text-align: center;
+        }
+        
+        #menu li {
+            display: inline-block;
+            margin: 10px;
+            color: #000;
+            background: #fff;
+            background: rgba(255, 255, 255, 0.3);
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+        
+        #menu li.active {
+            background: #666;
+            background: rgba(255, 255, 255, 1);
+            color: #000;
+        }
+        
+        #menu li a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        #menu li.active a:hover {
+            color: #000;
+        }
+        
+        #menu li:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+        
+        #menu li a,
+        #menu li.active a {
+            padding: 9px 18px;
+            display: block;
+        }
+        
+        #menu li.active a {
+            color: #000;
+        }
+        
+        #menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 40px;
+            z-index: 70;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="myContainer">
+        <div class="ms-left">
+            <div class="ms-section" id="left1">
+            </div>
+            <div class="ms-section" id="left2">
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-3 ">
+                        <h1 class="event-name">TREASURE HUNT</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-3">
+                             <div class="event-pera">
+                                <ol>
+                                    RULES:
+                                    <br>
+                                    <br>
+                                    <li>It is a team event, each team has 2 members</li>
+                                    <li>It will consist of 3 rounds ,round 1 is paper based ,selected team from round 1 goes to round 2 which is app based &amp; shortlisted team will face the third round which is purely based on coding</li>
+                                    <li>Round 1 &amp; 2 will be of 30 minutes each &amp; consist of multiple choice question</li>
+                                    <li>Round 3 is the coding round which is of 2 hours.</li>
+                                    <li>For round 3 participants should have to bring their own laptops.</li>
+                                </ol>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ms-section" id="left3">
+            </div>
+            <div class="ms-section" id="left4">
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-3 ">
+                        <h1 class="event-name">GADGET GURU</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-3">
+                              <div class="event-pera">
+
+                                This events for specially for who loves the gadget’s. The whole event based on latest Gadget‘s.
+                                
+                                <br>Winners get prize money
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-section" id="left5">
+
+            </div>
+            <div class="ms-section" id="left6">
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-3 ">
+                        <h1 class="event-name">PERFORMER OF THE YEAR</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-3">
+                            <h2 class="event-pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ms-right">
+            <div class="ms-section" id="right1">
+                <div class="row">
+                    <div class="col-lg-12 col-md-3 ">
+                        <h1 class="event-name">BRAIN MARATHON</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-3">
+                              <div class="event-pera">
+                                Talent hits a target no one else can hit. Genius hits a target no one else can see. So guys time to shake your brains up!!! Get the best out of yourself. As The Quiz always floats slightly above the ground!!! And only you can do it. Here you go.
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-section" id="right2">
+            </div>
+            <div class="ms-section" id="right3">
+                <div class="row">
+                    <div class="col-lg-12 col-md-3 ">
+                        <h1 class="event-name">CODE WAR</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-3">
+                             
+                                <div class="event-pera">
+                                    <p>Rules:</p>
+                                    <br>
+                                    <ol>
+                                        <li>Go to Codechef, login and register for the contest "CODEWAR"</li>
+                                        <li>The contest will be a 5 hour coding marathon</li>
+                                        <li>Participation will be Individual</li>
+                                        <li>There will be five questions of different difficulties</li>
+                                        <li>Winner will be selected according to the leaderboard</li>
+                                    </ol>
+                                    
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-section" id="right4">
+            </div>
+            <div class="ms-section" id="right5">
+                <div class="row">
+                    <div class="col-lg-12 col-md-3 ">
+                        <h1 class="event-name">JUST CLICK</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-3">
+                                                          <div class="event-pera" style="font-size:8pt;">
+                                    <p>Rules:
+                                        <br>
+                                        <ol>
+                                            <li>Register on www.cadnitd.co.in</li>
+                                            <li>You need to send the photo to <a target="_top" href="mailto:justclickts@gmail.com" style="color:crimson">justclickts@gmail.com</a> from your registered email id between 28th SEPT 2015 and 1st OCT 2015</li>
+                                            <li>The Submission of more than one picture will lead to disqualification</li>
+                                            <li>The Submission must be a digital photo clicked by yourself</li>
+                                            <li>The Submission must be entrant's original creation and owned fully by the entrant</li>
+                                            <li>The Submission must demonstrate one of the following contest themes: <span style="color:green">Open, Landscape</span></li>
+                                            <li>The Submission will be uploaded on our facebook page, you have to get as much likes as possible on your picture before 2nd OCT 2015</li>
+
+                                            <li>One has to like <a style="color:yellowgreen" href="https://www.facebook.com/technoshinex.5">Technoshine X.5 page</a> for their like to be considered</li>
+                                            <li>Winners will be decided with 50% weightage from number of Likes on your photo on our FB page and 50% weightage will be on our judges decision</li>
+                                        </ol>
+                                                              
+                                      
+                             
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ms-section" id="right6">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
