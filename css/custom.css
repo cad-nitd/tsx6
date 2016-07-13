@@ -21,19 +21,17 @@ img {
     width: 40px;
     height: 40px;
     border: 8px solid #ddd;
-    border: 8px solid rgba(150, 150, 150, 0.4);
+    border: 8px solid rgb(255, 136, 92);
     text-indent: -90000px;
     margin-top: -40px;
     cursor: pointer;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .nav-arrows span:hover {
-    border-color: rgba(150, 150, 150, 0.9);
+    border-color: rgb(230, 102, 55)
 }
 
 .nav-arrows span.nav-arrow-prev {
@@ -66,15 +64,23 @@ img {
     position: relative;
     width: 12px;
     height: 12px;
+    -moz-border-radius: 50%;
     border-radius: 50%;
     margin: 5px 15px;
     background: rgba(255, 255, 255, 0.69);
     cursor: pointer;
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -moz-transition: transform 0.5s, -moz-transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s, -moz-transform 0.5s;
 }
 
 .nav-dots span.nav-dot-current {
+    -webkit-transform: scale(1.7);
+    -moz-transform: scale(1.7);
     transform: scale(1.7);
 }
 
@@ -110,6 +116,7 @@ img {
     height: 260px;
     border: 2px dashed #ddd;
     border: 2px dashed rgba(150, 150, 150, 0.4);
+    -moz-border-radius: 50%;
     border-radius: 50%;
     position: absolute;
     bottom: 50%;
@@ -133,6 +140,7 @@ img {
     left: 50%;
     margin: -110px 0 0 -110px;
     /*	box-shadow:inset 0px 0px 2px 11px rgba(236, 84, 11, 0.92);*/
+    -moz-border-radius: 50%;
     border-radius: 50%;
     border-color: white;
 }
@@ -243,9 +251,12 @@ img {
     background: url('../images/82012.jpg');
     height: 100vh;
     width: 100vw;
+    -moz-background-size: cover;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
 }
 
@@ -260,6 +271,47 @@ img {
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
 */
+}
+
+#slide2bg {
+    position: absolute;
+    background: url('../images/superbat.jpg');
+    height: 100vh;
+    width: 100vw;
+    -moz-background-size: 300px auto;
+    background-size: 300px auto;
+    background-repeat: repeat;
+}
+
+#slide3bg {
+    position: absolute;
+    background: url('../images/superbat.jpg');
+    height: 100vh;
+    width: 100vw;
+    -moz-background-size: 300px auto;
+    background-size: 300px auto;
+    background-repeat: repeat;
+}
+
+#slide3bg:before,
+#slide1bg:before,
+#slide2bg:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*    background-color: rgba(0, 0, 0, 0.6);*/
+    background-image: -webkit-radial-gradient(center top, ellipse cover, rgba(0, 0, 0, 0.3), rgb(0, 0, 0));
+    background-image: -moz-radial-gradient(center top, ellipse cover, rgba(0, 0, 0, 0.3), rgb(0, 0, 0));
+    background-image: radial-gradient(center top, ellipse cover, rgba(0, 0, 0, 0.3), rgb(0, 0, 0));
+}
+
+#slide1bg:before {
+    background-image: -webkit-radial-gradient(center center, ellipse cover, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    background-image: -moz-radial-gradient(center center, ellipse cover, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    background-image: radial-gradient(center center, ellipse cover, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
 }
 
 @-webkit-keyframes rotate {
@@ -293,9 +345,7 @@ img {
 .demo-1 .bg-1 [data-icon]:after {
     color: #fff;
     background: url('../images/ironlogo.png') no-repeat center center;
-    -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -309,25 +359,20 @@ img {
 .demo-1 .bg-2 .sl-slide-inner,
 .demo-1 .bg-2 .sl-content-slice {
     /* background: red; */
-    background: url('../images/superbat.jpg') no-repeat center center;
+    /*    background: url('../images/superbat.jpg');*/
     /* 	max-width:100%;
 	height:auto; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    /*    background-size: 300px auto;*/
+    /*    background-position: center center;*/
+    /*    background-repeat: repeat;*/
+    /*    background-attachment: fixed;*/
+    /*    background-size: cover;*/
 }
 
 .demo-1 .bg-2 [data-icon]:after {
     color: #fff;
     background: url('../images/superbatlogo.jpg') no-repeat center center;
-    -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -346,17 +391,19 @@ img {
 .demo-1 .bg-3 .sl-content-slice {
     /* 	background: #db84ad; */
     /* background: red; */
-    background: url('../images/offline.jpg') no-repeat center center;
+    /*    background: url('../images/offline.jpg') no-repeat center center;*/
     /* 	max-width:100%;
 	height:auto; */
-    -webkit-background-size: cover;
+    /*  -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover;*/
+    /*
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+*/
 }
 
 .demo-1 .bg-3 .deco {
@@ -366,9 +413,7 @@ img {
 
 .demo-1 .bg-3 [data-icon]:after {
     background: url('../images/hlogo.jpg') no-repeat center center;
-    -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -392,13 +437,12 @@ img {
     /* 	max-width:100%;
 	height:auto; */
     /*    background: #FFF9CA;*/
-    -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    -moz-background-size: cover;
     background-size: cover;
 }
 
@@ -408,9 +452,7 @@ img {
 
 .demo-1 .bg-4 [data-icon]:after {
     /*    background: url('../images/superlogo.png') no-repeat center center;*/
-    -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -433,13 +475,12 @@ img {
     /*	background: url('../images/batman_mini.jpg') no-repeat center center;*/
     /* 	max-width:100%;
 	height:auto; */
-    -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    -moz-background-size: cover;
     background-size: cover;
 }
 
@@ -449,9 +490,7 @@ img {
 
 .demo-1 .bg-5 .deco:after {
     background: url('../images/batlogo.png') no-repeat center center;
-    -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -471,48 +510,36 @@ img {
 .sl-trans-elems .deco {
     -webkit-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
     -moz-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
-    -o-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
-    -ms-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
     animation: roll 1s ease-out both, fadeIn 1s ease-out both;
 }
 
 .sl-trans-elems h2 {
     -webkit-animation: moveUp 1s ease-in-out both;
     -moz-animation: moveUp 1s ease-in-out both;
-    -o-animation: moveUp 1s ease-in-out both;
-    -ms-animation: moveUp 1s ease-in-out both;
     animation: moveUp 1s ease-in-out both;
 }
 
 .sl-trans-elems blockquote {
     -webkit-animation: fadeIn 0.5s linear 0.5s both;
     -moz-animation: fadeIn 0.5s linear 0.5s both;
-    -o-animation: fadeIn 0.5s linear 0.5s both;
-    -ms-animation: fadeIn 0.5s linear 0.5s both;
     animation: fadeIn 0.5s linear 0.5s both;
 }
 
 .sl-trans-back-elems .deco {
     -webkit-animation: scaleDown 1s ease-in-out both;
     -moz-animation: scaleDown 1s ease-in-out both;
-    -o-animation: scaleDown 1s ease-in-out both;
-    -ms-animation: scaleDown 1s ease-in-out both;
     animation: scaleDown 1s ease-in-out both;
 }
 
 .sl-trans-back-elems h2 {
     -webkit-animation: fadeOut 1s ease-in-out both;
     -moz-animation: fadeOut 1s ease-in-out both;
-    -o-animation: fadeOut 1s ease-in-out both;
-    -ms-animation: fadeOut 1s ease-in-out both;
     animation: fadeOut 1s ease-in-out both;
 }
 
 .sl-trans-back-elems blockquote {
     -webkit-animation: fadeOut 1s linear both;
     -moz-animation: fadeOut 1s linear both;
-    -o-animation: fadeOut 1s linear both;
-    -ms-animation: fadeOut 1s linear both;
     animation: fadeOut 1s linear both;
 }
 
@@ -536,34 +563,16 @@ img {
     }
 }
 
-@-o-keyframes roll {
-    0% {
-        -o-transform: translateX(500px) rotate(360deg);
-        opacity: 0;
-    }
-    100% {
-        -o-transform: translateX(0px) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes roll {
-    0% {
-        -ms-transform: translateX(500px) rotate(360deg);
-        opacity: 0;
-    }
-    100% {
-        -ms-transform: translateX(0px) rotate(0deg);
-        opacity: 1;
-    }
-}
-
 @keyframes roll {
     0% {
+        -webkit-transform: translateX(500px) rotate(360deg);
+        -moz-transform: translateX(500px) rotate(360deg);
         transform: translateX(500px) rotate(360deg);
         opacity: 0;
     }
     100% {
+        -webkit-transform: translateX(0px) rotate(0deg);
+        -moz-transform: translateX(0px) rotate(0deg);
         transform: translateX(0px) rotate(0deg);
         opacity: 1;
     }
@@ -587,29 +596,15 @@ img {
     }
 }
 
-@-o-keyframes moveUp {
-    0% {
-        -o-transform: translateY(40px);
-    }
-    100% {
-        -o-transform: translateY(0px);
-    }
-}
-
-@-ms-keyframes moveUp {
-    0% {
-        -ms-transform: translateY(40px);
-    }
-    100% {
-        -ms-transform: translateY(0px);
-    }
-}
-
 @keyframes moveUp {
     0% {
+        -webkit-transform: translateY(40px);
+        -moz-transform: translateY(40px);
         transform: translateY(40px);
     }
     100% {
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
         transform: translateY(0px);
     }
 }
@@ -624,24 +619,6 @@ img {
 }
 
 @-moz-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes fadeIn {
     0% {
         opacity: 0;
     }
@@ -677,29 +654,15 @@ img {
     }
 }
 
-@-o-keyframes scaleDown {
-    0% {
-        -o-transform: scale(1);
-    }
-    100% {
-        -o-transform: scale(0.5);
-    }
-}
-
-@-ms-keyframes scaleDown {
-    0% {
-        -ms-transform: scale(1);
-    }
-    100% {
-        -ms-transform: scale(0.5);
-    }
-}
-
 @keyframes scaleDown {
     0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
         transform: scale(1);
     }
     100% {
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
         transform: scale(0.5);
     }
 }
@@ -714,24 +677,6 @@ img {
 }
 
 @-moz-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@-o-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@-ms-keyframes fadeOut {
     0% {
         opacity: 1;
     }

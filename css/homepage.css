@@ -87,7 +87,9 @@
 
 /*=======ABOUT=======*/
 
-#about-video {}
+#about-video {
+    margin-top:50px;
+}
 
 #about-desc {
     color: aliceblue;
@@ -114,18 +116,20 @@
     font-family: Montserrat;
     color: #962900;
     line-height: 0px;
+   
 }
+
 
 .mebname {
     font-size: 12pt;
     font-family: Montserrat;
     margin-top: 10px;
     color: #962900;
+   
 }
-
 .mebimg {
     width: 100px;
-    height: auto;
+    height: 100px;
 }
 
 #member-heading {
@@ -220,15 +224,24 @@
 }
 
 .social:hover .iconcolor {
-    color: #19c7ff;
+    color: rgb(25, 199, 255);
 }
-
+.social:hover .phone{
+    color:#31ea71;
+    
+}
+.social:hover .mail{
+    color:#c9c43f;
+}
+.social:hover .marker{
+    color:rgb(252, 0, 10);
+}
 .social:hover .yticoncolor {
-    color: #ff6080;
+    color: #ff2a2a;
 }
 
 .social:hover .fbiconcolor {
-    color: dodgerblue;
+    color: #3b5998;
 }
 
 
@@ -273,7 +286,7 @@
     left: 0;
     width: 100vw;
     height: 500px;
-    background: url("../images/bubbles/bubble.png");
+    background: url("../images/bubbles/bubble4.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -281,7 +294,19 @@
     transform-origin: 50% 50% 100px;
     transform: translateY(-50%) translateZ(-100px);
 }
+.heading-thunder{
+    background: url("../images/bubbles/bubble.png");
+     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
+.heading-thunder2{
+     background: url("../images/bubbles/bubble1.png");
+     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 .heading-text {
     overflow: visible;
     font-family: Bangers;
@@ -290,9 +315,11 @@
     text-align: center;
     color: #ffc861;
     transform-style: preserve-3d;
-      text-shadow: 5px 5px 1px rgba(0, 0, 0, 1);
+    text-shadow: 5px 5px 1px rgba(0, 0, 0, 1);
     /*display: none;*/
 }
+/*online event*/
+
 
 @media screen and (max-width:750px) {
     iframe {
@@ -302,5 +329,11 @@
     }
     .contacts-box {
         height: auto;
+    }
+}
+@media screen and (max-width:750px){
+    
+    .heading-text{
+        font-size: 
     }
 }

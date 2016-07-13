@@ -35,7 +35,7 @@
 }
 
 body {
-    background: lightskyblue;
+    background:rgba(239, 207, 168, 0.76);
     transition: background 1s;
 }
 
@@ -59,4 +59,21 @@ body {
     font-size: 12pt;
     line-height: 2em;
     padding: 0px 70px;
+}
+.backbtn{
+    position:absolute;
+    z-index: 1000;
+    margin:20px;
+    right:20px;
+    font-size:30px;
+}
+.backbtn a{
+    color:white;
+}
+.backbtn i{
+/*
+    height:50px;
+    width:50px;
+*/
+/*    font-size: 20px;*/
 }
