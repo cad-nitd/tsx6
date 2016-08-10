@@ -48,20 +48,34 @@
     color: #ff885c;
 }
 
-.overlay-btn {
+.overlay-wrapper {
     position: absolute;
     bottom: 13vh;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.overlay-btn:active {
+.overlay-wrapper div {
+    display: inline-block;
+}
+
+.overlay-wrapper div:nth-child(2) {
+    margin-left: 20px;
+}
+
+.overlay-btnclickeffect:active {
     /*    top: 0px !important;*/
     transform-origin: 50% 50%;
     transform: translateX(-50%) scale(0.9);
 }
 
+.overlay-btnhomeeffect:active{
+     transform-origin: 50% 50%;
+    transform: translateX(0%) scale(0.9);
+}
+
 .overlay-btn {
+  
     z-index: 200;
     border-radius: 0%;
     background: transparent !important;
@@ -75,6 +89,11 @@
     /*    padding-bottom: 15px !important;*/
     text-decoration: none;
     transition: all 0.25s;
+}
+@media screen and (max-width:450px){
+    .overlay-btn{
+        padding:10px 5px !important;
+    }
 }
 
 .overlay-btn:hover {

@@ -1,0 +1,27 @@
+@media screen and (max-width: 450px){
+    
+    .cadlogo{
+        margin:67px 12px !important;
+        width: 75px !important;
+        
+    }
+    .nitlogo{
+        margin :67px 12px !important;
+        width: 75px !important;
+    }
+    .heading-text{
+        font-size:40pt !important;
+    }
+    .nav-arrows span {
+        width: 30px !important;
+        height: 30px !important;
+        top: 60% !important;
+    }
+ 
+    .overlay-heading{
+        padding: 60px 0px 0px !important;
+    }
+    .navbar-default .navbar-nav>li>a {
+    color: #ff885c !important;
+}
+}
