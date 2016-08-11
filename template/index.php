@@ -252,38 +252,37 @@
 
                                     </div>
                                     <div class="row" style="margin-top:20px;">
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class=" mebimg img-circle" src="images/team/nisha.jpg">
-                                            <p class="mebname">Nisha Kumari</p>
-                                            <p class="stylemeb"><em>Fest Coordinator</em></p>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2">
+                                         <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/bappa.jpg">
                                             <p class="mebname">Bappaditya Samanta</p>
                                             <p class="stylemeb">Online Activity Head</p>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+                                          <div class="col-lg-2 col-md-2">
+                                            <img class=" mebimg img-circle" src="images/team/subham.jpg">
+                                            <p class="mebname">Subham Majavdiya</p>
+                                            <p class="stylemeb"><em>Development Head</em></p>
+                                        </div>
+                                          <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/johev.jpg">
                                             <p class="mebname">Sk Jhohev</p>
                                             <p class="stylemeb"><em>Development Head</em></p>
                                         </div>
-
+                                        <div class="col-lg-2 col-md-2">
+                                            <img class=" mebimg img-circle" src="images/team/umesh.jpg">
+                                            <p class="mebname">Umesh Kumar</p>
+                                            <p class="stylemeb"><em>Development Head</em></p>
+                                        </div>
                                         <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/mayank.jpg">
                                             <p class="mebname">Mayank Verma</p>
                                             <p class="stylemeb"><em>Fest Coordinator</em></p>
                                         </div>
-
                                         <div class="col-lg-2 col-md-2">
-                                            <img class=" mebimg img-circle" src="images/team/arpit.jpg">
-                                            <p class="mebname">Arpit Mishra</p>
-                                            <p class="stylemeb"><em>Management Head</em></p>
+                                            <img class=" mebimg img-circle" src="images/team/nisha.jpg">
+                                            <p class="mebname">Nisha Kumari</p>
+                                            <p class="stylemeb"><em>Fest Coordinator</em></p>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class="mebimg img-circle" src="images/team/sonam.jpg">
-                                            <p class="mebname">Sonam Agrawal</p>
-                                            <p class="stylemeb"><em>Management Head</em></p>
-                                        </div>
+                                      
                                     </div>
                                     <div class="row" style="margin-top:20px;">
                                         <div class="col-lg-2 col-md-2">
@@ -291,132 +290,170 @@
                                             <p class="mebname">Oindrila Saha</p>
                                             <p class="stylemeb"><em>Designing Coordinator </em></p>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class=" mebimg img-circle" src="images/team/subham.jpg">
-                                            <p class="mebname">Subham Majavdiya</p>
-                                            <p class="stylemeb"><em>Development Head</em></p>
+                                           <div class="col-lg-2 col-md-2">
+                                            <img class="img-circle mebimg" src="images/team/sandeep.jpg">
+                                            <p class="mebname">Sandeep Vani</p>
+                                            <p class="stylemeb"><em>Designing Head</em></p>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
+                                           <div class="col-lg-2 col-md-2">
+                                            <img class="img-circle mebimg" src="images/team/ankit.jpg">
+                                            <p class="mebname">Ankit Singh Rajput</p>
+                                            <p class="stylemeb"><em>Designing Coordinator</em></p>
+                                        </div>
+                                          <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/abhishek_agarwal.jpg">
                                             <p class="mebname">Abhishek Agarwal</p>
                                             <p class="stylemeb"><em>Group Coordinator</em></p>
+                                        </div> 
+                                           <div class="col-lg-2 col-md-2">
+                                            <img class=" mebimg img-circle" src="images/team/arpit.jpg">
+                                            <p class="mebname">Arpit Mishra</p>
+                                            <p class="stylemeb"><em>Management Head</em></p>
                                         </div>
+                                         <div class="col-lg-2 col-md-2">
+                                            <img class="mebimg img-circle" src="images/team/sonam.jpg">
+                                            <p class="mebname">Sonam Agrawal</p>
+                                            <p class="stylemeb"><em>Management Head</em></p>
+                                        </div>
+                                     
+                                     
+                                       
+                                    </div>
+                                    <div class="row" style="margin-top:20px;">
                                         <div class="col-lg-2 col-md-2">
-                                            <img class=" mebimg img-circle" src="images/team/umesh.jpg">
-                                            <p class="mebname">Umesh Kumar</p>
-                                            <p class="stylemeb"><em>Development Head</em></p>
+                                            <img class="mebimg img-circle" src="images/team/tanushree.jpg">
+                                            <p class="mebname">Tanushree Chakravarty</p>
+                                            <p class="stylemeb"><em>Resource Manager</em></p>
                                         </div>
-
+                                        
                                         <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/saurabh_mishra.jpg">
                                             <p class="mebname">Saurabh Mishra</p>
                                             <p class="stylemeb"><em>Resource Manager</em></p>
                                         </div>
                                         <div class="col-lg-2 col-md-2">
-                                            <img class="mebimg img-circle" src="images/team/tanushree.jpg">
-                                            <p class="mebname">Tanushree Chakravarty</p>
-                                            <p class="stylemeb"><em>Resource Manager</em></p>
-                                        </div>
-                                    </div>
-                                    <div class="row" style="margin-top:20px;">
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class="img-circle mebimg" src="images/team/sandeep.jpg">
-                                            <p class="mebname">Sandeep Vani</p>
-                                            <p class="stylemeb"><em>Designing Head</em></p>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class="img-circle mebimg" src="images/team/ankit.jpg">
-                                            <p class="mebname">Ankit Singh Rajput</p>
-                                            <p class="stylemeb"><em>Designing Coordinator</em></p>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/roshan2.jpg">
                                             <p class="mebname">Roshan kumar</p>
                                             <p class="stylemeb"><em>Web Designing Team</em></p>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class="img-circle mebimg" src="images/team/Sujeet.jpeg">
-                                            <p class="mebname">Sujeet Kumar Gupta</p>
-                                            <p class="stylemeb"><em>Development Team</em></p>
+                                           <div class="col-lg-2 col-md-2">
+                                            <img class="img-circle mebimg" src="images/team/uttam.jpg">
+                                            <p class="mebname">Uttam Omar</p>
+                                            <p class="stylemeb"><em>Web Devlopment Team</em></p>
                                         </div>
+                                     
                                         <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/nishant.jpg">
                                             <p class="mebname">Nishant</p>
                                             <p class="stylemeb"><em>Data Structure Team</em></p>
                                         </div>
                                         <div class="col-lg-2 col-md-2">
-                                            <img class="img-circle mebimg" src="images/team/rajan.jpg">
-                                            <p class="mebname">rajan priyadarshi</p>
-                                            <p class="stylemeb"><em> Management Team</em></p>
-                                        </div>
-
-                                    </div>
-                                    <div class="row" style="margin-top:20px;">
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class="img-circle mebimg" src="images/team/sree.jpg">
-                                            <p class="mebname">shirish seles</p>
-                                            <p class="stylemeb"><em>Designing Team</em></p>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class="img-circle mebimg" src="images/team/subhamjpg.jpg">
-                                            <p class="mebname">Subham Verma</p>
-                                            <p class="stylemeb"><em>Management Team</em></p>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class="img-circle mebimg" src="images/team/deepanshu.jpg">
-                                            <p class="mebname">Deepanshu Sharma</p>
-                                            <p class="stylemeb"><em>Devlopment team</em></p>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class="img-circle mebimg" src="images/team/nabanita.jpg">
-                                            <p class="mebname">Nabanita Mondal</p>
-                                            <p class="stylemeb"><em>Web Devlopment Team</em></p>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/himanshu.jpg">
                                             <p class="mebname">Himanshu Kumari </p>
                                             <p class="stylemeb"><em>Data Structure Team</em></p>
                                         </div>
+                                        
+
+                                    </div>
+                                    <div class="row" style="margin-top:20px;">
+                                       
+                                          <div class="col-lg-2 col-md-2">
+                                            <img class="img-circle mebimg" src="images/team/deepanshu.jpg">
+                                            <p class="mebname">Deepanshu Sharma</p>
+                                            <p class="stylemeb"><em>Devlopment team</em></p>
+                                        </div>
+                                       
                                         <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/saroj.jpg">
                                             <p class="mebname">Saroj Kumar</p>
                                             <p class="stylemeb"><em>Development Team</em></p>
                                         </div>
-
-                                    </div>
-
-                                    <div class="row" style="margin:20px 0px 100px 0px;">
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class=" mebimg img-circle" src="images/team/neha.jpg">
-                                            <p class="mebname">Neha Chandra</p>
-                                            <p class="stylemeb"><em>Management Team</em></p>
+                                           <div class="col-lg-2 col-md-2">
+                                            <img class="img-circle mebimg" src="images/team/Sujeet.jpeg">
+                                            <p class="mebname">Sujeet Kumar Gupta</p>
+                                            <p class="stylemeb"><em>Development Team</em></p>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class=" mebimg img-circle" src="images/team/tanya.jpg">
-                                            <p class="mebname">Tanya Singh</p>
-                                            <p class="stylemeb"><em>Management Team</em></p>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class=" mebimg img-circle" src="images/team/manish.jpg">
-                                            <p class="mebname">Manish Shaw</p>
-                                            <p class="stylemeb"><em>Designing Team</em></p>
-                                        </div>
+                                        
                                         <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/deblina.jpeg">
                                             <p class="mebname">Deblina Banerjee</p>
                                             <p class="stylemeb"><em>Devlopment Team</em></p>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class=" mebimg img-circle" src="images/team/suman.jpg">
-                                            <p class="mebname">Suman Singh</p>
-                                            <p class="stylemeb"><em>web Devlopment Team</em></p>
+                                          <div class="col-lg-2 col-md-2">
+                                            <img class=" mebimg img-circle" src="images/team/ashu.jpg">
+                                            <p class="mebname">Ashu Renu</p>
+                                            <p class="stylemeb"><em>Devlopment Team</em></p>
+                                        </div>
+                                           <div class="col-lg-2 col-md-2">
+                                            <img class=" mebimg img-circle" src="images/team/manish.jpg">
+                                            <p class="mebname">Manish Shaw</p>
+                                            <p class="stylemeb"><em>Designing Team</em></p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row" style="margin:20px;">
+                                         <div class="col-lg-2 col-md-2">
+                                            <img class="img-circle mebimg" src="images/team/sree.jpg">
+                                            <p class="mebname">shirish seles</p>
+                                            <p class="stylemeb"><em>Designing Team</em></p>
+                                        </div>
+                                          <div class="col-lg-2 col-md-2">
+                                            <img class="img-circle mebimg" src="images/team/rahul_ravi.jpg">
+                                            <p class="mebname">Rahul RAvi Prakash</p>
+                                            <p class="stylemeb"><em>Designing Team</em></p>
                                         </div>
                                         <div class="col-lg-2 col-md-2">
+                                            <img class=" mebimg img-circle" src="images/team/neha.jpg">
+                                            <p class="mebname">Neha Chandra</p>
+                                            <p class="stylemeb"><em>Management Team</em></p>
+                                        </div>
+                                        
+                                       
+                                     
+                                        <div class="col-lg-2 col-md-2">
+                                            <img class=" mebimg img-circle" src="images/team/krishnendu.jpg">
+                                            <p class="mebname">Krishnendu Mukherjee</p>
+                                            <p class="stylemeb"><em>Management Team</em></p>
+                                        </div>
+                                     
+                                         <div class="col-lg-2 col-md-2">
+                                            <img class="img-circle mebimg" src="images/team/subhamjpg.jpg">
+                                            <p class="mebname">Subham Verma</p>
+                                            <p class="stylemeb"><em>Management Team</em></p>
+                                        </div>
+                                     
+                                        <div class="col-lg-2 col-md-2">
+                                            <img class="img-circle mebimg" src="images/team/rajan.jpg">
+                                            <p class="mebname">rajan priyadarshi</p>
+                                            <p class="stylemeb"><em> Management Team</em></p>
+                                        </div>
+                                    </div>
+                                      <div class="row" style="margin:20px 0px 100px 0px;">
+                                             <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/sanjay.jpeg">
                                             <p class="mebname">Sanjay choudhary</p>
                                             <p class="stylemeb"><em>Management Team</em></p>
                                         </div>
+                                           <div class="col-lg-2 col-md-2">
+                                            <img class=" mebimg img-circle" src="images/team/tanya.jpg">
+                                            <p class="mebname">Tanya Singh</p>
+                                            <p class="stylemeb"><em>Management Team</em></p>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2">
+                                            <img class=" mebimg img-circle" src="images/team/soumyajit.jpg">
+                                            <p class="mebname">Soumyajit Das</p>
+                                            <p class="stylemeb"><em>Management Team</em></p>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2">
+                                            <img class=" mebimg img-circle" src="images/team/aakanksha.jpg">
+                                            <p class="mebname">Aakanksha Kashyap</p>
+                                            <p class="stylemeb"><em>Management Team</em></p>
+                                        </div>
+                                      
+                                        
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
