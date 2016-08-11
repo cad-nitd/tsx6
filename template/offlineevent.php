@@ -27,7 +27,7 @@
         $(document).ready(function () {
             $('#myContainer').multiscroll({
                 //sectionsColor: ['transparent', 'transparent', 'white','white','white','white'],
-                anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth'],
+               // anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth'],
                 menu: '#menu',
                 easing: 'easeInOutCubic',
                 onLeave: function (index, nextIndex, direction) {
