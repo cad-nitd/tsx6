@@ -11,13 +11,13 @@
     <meta name="description" content="Technoshinex.6" />
     <meta name="keywords" content="technoshinex6, technoshine, cad, nitdurgapur" />
     <meta name="author" content="roshan" />
-<!--    links for navigation    -->
-<!--
+    <!--    links for navigation    -->
+    <!--
      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 -->
-<!--    end of links for navigation -->
+    <!--    end of links for navigation -->
     <link rel="icon" type="image/png" href="images/nittablogo.png">
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
@@ -42,8 +42,8 @@
 
     <script src="js/headingmm.js"></script>
 </head>
-    <style>
-/*
+<style>
+    /*
     .navbar {
    background-color: transparent;
    background: transparent;
@@ -51,66 +51,67 @@
         
 }
 */
-
-/*.navbar li { color: #000 } */
-
-    </style>
+    /*.navbar li { color: #000 } */
+</style>
 
 <body>
-    <nav style="z-index:10; background:#ffc861;" class="navbar navbar-default visible-xs" >
+    <nav style="z-index:10; background:#ffc861;" class="navbar navbar-default visible-xs">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="background:#ff885c;">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-<!--            <a class="navbar-brand" href="#">Project name</a>-->
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="background:#ff885c;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--            <a class="navbar-brand" href="#">Project name</a>-->
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-            </ul>
-         
-          </div><!--/.nav-collapse -->
-       </div><!-- /.container-fluid -->
-     </nav><!-- -->
-        <div class="row">
+
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- -->
+    <div class="row">
         <div class="navbar navbar-default visible-xs">
             <div class="navbar-header">
-            <span class="Position">Menu</span>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
+                <span class="Position">Menu</span>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
 
             <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-            <li><a href="index.html">MENU 1</a></li>
-            <li><a href="about.html">MENU 2</a></li>
-            <li><a href="food.html">MENU 3</a></li>
-            <li><a href="apparels.html">MENU 3</a></li>
-            </ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">MENU 1</a></li>
+                    <li><a href="about.html">MENU 2</a></li>
+                    <li><a href="food.html">MENU 3</a></li>
+                    <li><a href="apparels.html">MENU 3</a></li>
+                </ul>
             </div>
         </div>
-        </div>
+    </div>
     <div class="modal3">
         <input id="modal3" type="checkbox" name="modal3" tabindex="1">
         <div class="modal3__overlay">
@@ -119,7 +120,7 @@
             <div class="container" id="about-content">
                 <div class="row">
                     <div class="col-lg-12 col-md-12" id="about-video">
-       
+
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/xxpE7jyMh30" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -145,7 +146,7 @@
                         <img src="images/nitlogo.png" alt="nitlogo" class="nitlogo">
                         <!-- end overlay -->
                         <div class="overlay-wrapper">
-                          <div style="cursor:pointer; margin-right:10px;"><a class="btn1 btn1-dark overlay-btn overlay-btnhomeeffect" href='<?=$GLOBALS['site.root']?>/register'>REGISTER</a></div>
+                            <div style="cursor:pointer; margin-right:10px;"><a class="btn1 btn1-dark overlay-btn overlay-btnhomeeffect" href='<?=$GLOBALS[' site.root ']?>/register'>REGISTER</a></div>
                             <label for="modal3">
 
                                 <div style="cursor:pointer; margin-right:10px;"><a class="btn1 btn1-dark overlay-btn overlay-btnhomeeffect">WHAT?</a></div>
@@ -160,7 +161,7 @@
         echo "<a class='btn1 btn1-dark overlay-btn overlay-btnhomeeffect' href='$siteroot/logout'>LOGOUT</a>";
     else
         echo "<a class='btn1 btn1-dark overlay-btn overlay-btnhomeeffect' href='$siteroot/login'>LOGIN</a>";
-    ?>                  </div>
+    ?> </div>
                         </div>
                         <div class="rotate">
                             <div class="heading rotatexy">
@@ -252,17 +253,17 @@
 
                                     </div>
                                     <div class="row" style="margin-top:20px;">
-                                         <div class="col-lg-2 col-md-2">
+                                        <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/bappa.jpg">
                                             <p class="mebname">Bappaditya Samanta</p>
                                             <p class="stylemeb">Online Activity Head</p>
                                         </div>
-                                          <div class="col-lg-2 col-md-2">
+                                        <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/subham.jpg">
                                             <p class="mebname">Subham Majavdiya</p>
                                             <p class="stylemeb"><em>Development Head</em></p>
                                         </div>
-                                          <div class="col-lg-2 col-md-2">
+                                        <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/johev.jpg">
                                             <p class="mebname">Sk Jhohev</p>
                                             <p class="stylemeb"><em>Development Head</em></p>
@@ -282,7 +283,7 @@
                                             <p class="mebname">Nisha Kumari</p>
                                             <p class="stylemeb"><em>Fest Coordinator</em></p>
                                         </div>
-                                      
+
                                     </div>
                                     <div class="row" style="margin-top:20px;">
                                         <div class="col-lg-2 col-md-2">
@@ -290,34 +291,34 @@
                                             <p class="mebname">Oindrila Saha</p>
                                             <p class="stylemeb"><em>Designing Coordinator </em></p>
                                         </div>
-                                           <div class="col-lg-2 col-md-2">
+                                        <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/sandeep.jpg">
                                             <p class="mebname">Sandeep Vani</p>
                                             <p class="stylemeb"><em>Designing Head</em></p>
                                         </div>
-                                           <div class="col-lg-2 col-md-2">
+                                        <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/ankit.jpg">
                                             <p class="mebname">Ankit Singh Rajput</p>
                                             <p class="stylemeb"><em>Designing Coordinator</em></p>
                                         </div>
-                                          <div class="col-lg-2 col-md-2">
+                                        <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/abhishek_agarwal.jpg">
                                             <p class="mebname">Abhishek Agarwal</p>
                                             <p class="stylemeb"><em>Group Coordinator</em></p>
-                                        </div> 
-                                           <div class="col-lg-2 col-md-2">
+                                        </div>
+                                        <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/arpit.jpg">
                                             <p class="mebname">Arpit Mishra</p>
                                             <p class="stylemeb"><em>Management Head</em></p>
                                         </div>
-                                         <div class="col-lg-2 col-md-2">
+                                        <div class="col-lg-2 col-md-2">
                                             <img class="mebimg img-circle" src="images/team/sonam.jpg">
                                             <p class="mebname">Sonam Agrawal</p>
                                             <p class="stylemeb"><em>Management Head</em></p>
                                         </div>
-                                     
-                                     
-                                       
+
+
+
                                     </div>
                                     <div class="row" style="margin-top:20px;">
                                         <div class="col-lg-2 col-md-2">
@@ -325,7 +326,7 @@
                                             <p class="mebname">Tanushree Chakravarty</p>
                                             <p class="stylemeb"><em>Resource Manager</em></p>
                                         </div>
-                                        
+
                                         <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/saurabh_mishra.jpg">
                                             <p class="mebname">Saurabh Mishra</p>
@@ -336,12 +337,12 @@
                                             <p class="mebname">Roshan kumar</p>
                                             <p class="stylemeb"><em>Web Designing Team</em></p>
                                         </div>
-                                           <div class="col-lg-2 col-md-2">
+                                        <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/uttam.jpg">
                                             <p class="mebname">Uttam Omar</p>
                                             <p class="stylemeb"><em>Web Devlopment Team</em></p>
                                         </div>
-                                     
+
                                         <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/nishant.jpg">
                                             <p class="mebname">Nishant</p>
@@ -352,39 +353,39 @@
                                             <p class="mebname">Himanshu Kumari </p>
                                             <p class="stylemeb"><em>Data Structure Team</em></p>
                                         </div>
-                                        
+
 
                                     </div>
                                     <div class="row" style="margin-top:20px;">
-                                       
-                                          <div class="col-lg-2 col-md-2">
+
+                                        <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/deepanshu.jpg">
                                             <p class="mebname">Deepanshu Sharma</p>
                                             <p class="stylemeb"><em>Devlopment team</em></p>
                                         </div>
-                                       
+
                                         <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/saroj.jpg">
                                             <p class="mebname">Saroj Kumar</p>
                                             <p class="stylemeb"><em>Development Team</em></p>
                                         </div>
-                                           <div class="col-lg-2 col-md-2">
+                                        <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/Sujeet.jpeg">
                                             <p class="mebname">Sujeet Kumar Gupta</p>
                                             <p class="stylemeb"><em>Development Team</em></p>
                                         </div>
-                                        
+
                                         <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/deblina.jpeg">
                                             <p class="mebname">Deblina Banerjee</p>
                                             <p class="stylemeb"><em>Devlopment Team</em></p>
                                         </div>
-                                          <div class="col-lg-2 col-md-2">
+                                        <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/ashu.jpg">
                                             <p class="mebname">Ashu Renu</p>
                                             <p class="stylemeb"><em>Devlopment Team</em></p>
                                         </div>
-                                           <div class="col-lg-2 col-md-2">
+                                        <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/manish.jpg">
                                             <p class="mebname">Manish Shaw</p>
                                             <p class="stylemeb"><em>Designing Team</em></p>
@@ -393,12 +394,12 @@
                                     </div>
 
                                     <div class="row" style="margin:20px;">
-                                         <div class="col-lg-2 col-md-2">
+                                        <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/sree.jpg">
                                             <p class="mebname">shirish seles</p>
                                             <p class="stylemeb"><em>Designing Team</em></p>
                                         </div>
-                                          <div class="col-lg-2 col-md-2">
+                                        <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/rahul_ravi.jpg">
                                             <p class="mebname">Rahul RAvi Prakash</p>
                                             <p class="stylemeb"><em>Designing Team</em></p>
@@ -408,34 +409,34 @@
                                             <p class="mebname">Neha Chandra</p>
                                             <p class="stylemeb"><em>Management Team</em></p>
                                         </div>
-                                        
-                                       
-                                     
+
+
+
                                         <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/krishnendu.jpg">
                                             <p class="mebname">Krishnendu Mukherjee</p>
                                             <p class="stylemeb"><em>Management Team</em></p>
                                         </div>
-                                     
-                                         <div class="col-lg-2 col-md-2">
+
+                                        <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/subhamjpg.jpg">
                                             <p class="mebname">Subham Verma</p>
                                             <p class="stylemeb"><em>Management Team</em></p>
                                         </div>
-                                     
+
                                         <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/rajan.jpg">
                                             <p class="mebname">rajan priyadarshi</p>
                                             <p class="stylemeb"><em> Management Team</em></p>
                                         </div>
                                     </div>
-                                      <div class="row" style="margin:20px 0px 100px 0px;">
-                                             <div class="col-lg-2 col-md-2">
+                                    <div class="row" style="margin:20px 0px 100px 0px;">
+                                        <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/sanjay.jpeg">
                                             <p class="mebname">Sanjay choudhary</p>
                                             <p class="stylemeb"><em>Management Team</em></p>
                                         </div>
-                                           <div class="col-lg-2 col-md-2">
+                                        <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/tanya.jpg">
                                             <p class="mebname">Tanya Singh</p>
                                             <p class="stylemeb"><em>Management Team</em></p>
@@ -450,10 +451,10 @@
                                             <p class="mebname">Aakanksha Kashyap</p>
                                             <p class="stylemeb"><em>Management Team</em></p>
                                         </div>
-                                      
-                                        
+
+
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -1046,7 +1047,7 @@
                                 $nav.removeClass('nav-dot-current');
                                 $nav.eq(pos).addClass('nav-dot-current');
 
-
+                                window.location.hash = pos;
                             },
                             onAfterChange: function (slide, pos) {
                                 if (pos == 5) {
@@ -1054,12 +1055,27 @@
                                 }
                             }
                         }),
-
+//                        initSlide = function (pageno) {
+//                            console.log(pageno);
+//                            if (!slitslider.isActive()) {
+//                                slitslider.jump(pageno);
+//                            } else {
+//                                setTimeout(function () {
+//                                    initSlide(pageno);
+//                                }, 100);
+//                            }
+//                        },
                         init = function () {
-
                             initEvents();
-                            //slitslider.jump(6);
 
+                            if (window.location.hash != "") {
+                                var pageno = window.location.hash.substr(1);
+                                //initSlide(parseInt(pageno)+1);
+                                slitslider.jump(parseInt(pageno)+1);
+
+                                //console.log(window.location.hash, pageno);
+                            }
+                            //slitslider.jump(6);
                         },
                         initEvents = function () {
 
@@ -1079,23 +1095,17 @@
                             $nav.each(function (i) {
 
                                 $(this).on('click', function (event) {
-
                                     var $dot = $(this);
 
                                     if (!slitslider.isActive()) {
-
                                         $nav.removeClass('nav-dot-current');
                                         $dot.addClass('nav-dot-current');
-
                                     }
 
                                     slitslider.jump(i + 1);
                                     return false;
-
                                 });
-
                             });
-
                         };
 
                     return {
@@ -1105,8 +1115,6 @@
                 })();
 
                 Page.init();
-
-
             });
         </script>
     </div>

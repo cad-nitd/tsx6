@@ -2,8 +2,8 @@
 
 //database credentials
 define('DBHOST','localhost');
-define('DBUSER','cadnitd_root');
-define('DBPASS','b(Q;*4+6H[%x');
+define('DBUSER','root');
+define('DBPASS','');
 define('DBNAME',config('dbname'));
 
 class Database {
