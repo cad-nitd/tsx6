@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="css/aboutusoverlay.css" />
     <link rel="stylesheet" type="text/css" href="css/eventcss.css" />
     <script src="js/snap.svg-min.js"></script>
-
+     <script src="js/tether.min.js"></script>
     <script src="js/headingmm.js"></script>
 </head>
 <style>
@@ -1012,12 +1012,12 @@
                 </nav>
 
                 <nav id="nav-dots" class="nav-dots">
-                    <span class="nav-dot-current"></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="nav-dot-current" data-toggle="tooltip" data-placement="top" title="Home"></span>
+                    <span data-toggle="tooltip" data-placement="top" title="Online Event"></span>
+                    <span data-toggle="tooltip" data-placement="top" title="Offline Event"></span>
+                    <span data-toggle="tooltip" data-placement="top" title="Member"></span>
+                    <span data-toggle="tooltip" data-placement="top" title="Sponsors"></span>
+                    <span data-toggle="tooltip" data-placement="top" title="Contac Us"></span>
                 </nav>
             </div>
             <!-- /slider-wrapper -->
@@ -1116,6 +1116,11 @@
 
                 Page.init();
             });
+            
+            
+            $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
         </script>
     </div>
 
