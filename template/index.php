@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="css/aboutusoverlay.css" />
     <link rel="stylesheet" type="text/css" href="css/eventcss.css" />
     <script src="js/snap.svg-min.js"></script>
-     <script src="js/tether.min.js"></script>
+    <script src="js/tether.min.js"></script>
     <script src="js/headingmm.js"></script>
 </head>
 <style>
@@ -1007,8 +1007,8 @@
 
                 <!-- /sl-slider -->
                 <nav id="nav-arrows" class="nav-arrows">
-                    <span class="nav-arrow-prev">Previous</span>
-                    <span class="nav-arrow-next">Next</span>
+                    <span class="nav-arrow-prev" data-toggle="tooltip" data-placement="right" title="Previous">Previous</span>
+                    <span class="nav-arrow-next" data-toggle="tooltip" data-placement="left" title="Next">Next</span>
                 </nav>
 
                 <nav id="nav-dots" class="nav-dots">
@@ -1039,46 +1039,56 @@
         <script type="text/javascript">
             $(function () {
                 var Page = (function () {
+                    var left = ["Contact us", "Home", "Online Event", "Offline Event", "Members", "Sponsors"];
+                    var right = ["Online Event", "Offline Event", "Members", "Sponsors", "Contact Us", "Home"];
 
                     var $navArrows = $('#nav-arrows'),
+                        $navleft = $navArrows.children(':first'),
+                        $navright = $navArrows.children(':last'),
                         $nav = $('#nav-dots > span'),
                         slitslider = $('#slider').slitslider({
                             onBeforeChange: function (slide, pos) {
                                 $nav.removeClass('nav-dot-current');
                                 $nav.eq(pos).addClass('nav-dot-current');
-
+                                
+                                setArrowText(pos);
+                                //console.log(pos);                                
                                 window.location.hash = pos;
                             },
                             onAfterChange: function (slide, pos) {
+                                //setArrowText(pos);
                                 if (pos == 5) {
                                     resizeMap();
                                 }
                             }
                         }),
-//                        initSlide = function (pageno) {
-//                            console.log(pageno);
-//                            if (!slitslider.isActive()) {
-//                                slitslider.jump(pageno);
-//                            } else {
-//                                setTimeout(function () {
-//                                    initSlide(pageno);
-//                                }, 100);
-//                            }
-//                        },
+                        setArrowText = function (pos) {
+                            //console.log($navArrows);
+                            $navleft.tooltip('hide');
+                            $navright.tooltip('hide');
+
+                            $navleft.attr("title", "");
+                            $navleft.attr("data-original-title", left[pos]);
+
+                            $navright.attr("title", "");
+                            $navright.attr("data-original-title", right[pos]);
+
+                            //$('[data-toggle="tooltip"]').tooltip('show');
+                        },
                         init = function () {
                             initEvents();
 
+                            setArrowText(0);
                             if (window.location.hash != "") {
                                 var pageno = window.location.hash.substr(1);
-                                //initSlide(parseInt(pageno)+1);
-                                slitslider.jump(parseInt(pageno)+1);
+                                slitslider.jump(parseInt(pageno) + 1);
+                                setArrowText(pageno);
 
                                 //console.log(window.location.hash, pageno);
                             }
                             //slitslider.jump(6);
                         },
                         initEvents = function () {
-
                             // add navigation events
                             $navArrows.children(':last').on('click', function () {
                                 slitslider.next();
@@ -1086,10 +1096,8 @@
                             });
 
                             $navArrows.children(':first').on('click', function () {
-
                                 slitslider.previous();
                                 return false;
-
                             });
 
                             $nav.each(function (i) {
@@ -1116,11 +1124,11 @@
 
                 Page.init();
             });
-            
-            
+
+
             $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+                $('[data-toggle="tooltip"]').tooltip();
+            })
         </script>
     </div>
 
