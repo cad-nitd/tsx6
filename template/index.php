@@ -1017,7 +1017,7 @@
                     <span data-toggle="tooltip" data-placement="top" title="Offline Event"></span>
                     <span data-toggle="tooltip" data-placement="top" title="Member"></span>
                     <span data-toggle="tooltip" data-placement="top" title="Sponsors"></span>
-                    <span data-toggle="tooltip" data-placement="top" title="Contac Us"></span>
+                    <span data-toggle="tooltip" data-placement="top" title="Where?"></span>
                 </nav>
             </div>
             <!-- /slider-wrapper -->

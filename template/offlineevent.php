@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!--end link bootstrap link -->
-    <link rel="stylesheet" type="text/css" href="css/online.css" />
+    <link rel="stylesheet" type="text/css" href="css/offline.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Bangers' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="js/jquery.multiscroll.js"></script>
 
     <script type="text/javascript">
-        var colors = ['rgba(239, 207, 168, 0.76)', 'rgb(207, 168, 109', 'rgba(174, 60, 60, 0.7)', 'rgba(75, 185, 212, 0.74)', 'rgba(113, 166, 84, 0.63)', 'rgba(199, 139, 17, 0.77)'];
+        var colors = ['rgba(239, 207, 168, 0.76)', 'rgb(207, 168, 109', 'rgba(174, 60, 60, 0.7)', 'rgba(75, 185, 212, 0.74)', 'rgba(113, 166, 84, 0.63)', 'rgba(199, 139, 17, 0.77)',  'rgba(199, 139, 17, 0.77)', 'rgba(199, 139, 17, 0.77)',  'rgba(199, 139, 17, 0.77)'];
         $(document).ready(function () {
             $('#myContainer').multiscroll({
                 //sectionsColor: ['transparent', 'transparent', 'white','white','white','white'],
@@ -115,18 +115,20 @@
 
                 <div class="row">
                     <div class="col-lg-12 col-md-12 ">
-                        <h1 class="event-name">TREASURE HUNT</h1>
+                        <h1 class="event-name">GADGET GURU</h1>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                              <div class="event-pera">
                                
                                    
+<!--
                                     <li>It is a team event, each team has 2 members</li>
                                     <li>It will consist of 3 rounds ,round 1 is paper based ,selected team from round 1 goes to round 2 which is app based &amp; shortlisted team will face the third round which is purely based on coding</li>
                                     <li>Round 1 &amp; 2 will be of 30 minutes each &amp; consist of multiple choice question</li>
                                     <li>Round 3 is the coding round which is of 2 hours.</li>
                                     <li>For round 3 participants should have to bring their own laptops.</li>
+-->
                                 
                                
                             </div>
@@ -141,16 +143,18 @@
 
                 <div class="row">
                     <div class="col-lg-12 col-md-12 ">
-                        <h1 class="event-name">GADGET GURU</h1>
+                        <h1 class="event-name">SOCKET COMBAT</h1>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                               <div class="event-pera">
 
+<!--
                                 This events for specially for who loves the gadget’s. The whole event based on latest Gadget‘s.
                                 
                                 <br>Winners get prize money
                                 <br>
+-->
                             </div>
                         </div>
                     </div>
@@ -167,24 +171,47 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-                            <h2 class="event-pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h2>
+<!--                            <h2 class="event-pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h2>-->
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="ms-section" id="left7">
+            </div>
+<div class="ms-section" id="left8">
+         <div class="row">
+                    <div class="col-lg-12 col-md-12 ">
+                        <h1 class="event-name">TREASURE HUNT</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--
+<div class="ms-section" id="left9">
+            </div>
+<div class="ms-section" id="left10">
+            </div>
+-->
         </div>
         <div class="ms-right">
             <div class="ms-section" id="right1">
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
-                        <h1 class="event-name">BRAIN MARATHON</h1>
+                        <h1 class="event-name">TOTAL CHAOS</h1>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
+<!--
                               <div class="event-pera">
                                 Talent hits a target no one else can hit. Genius hits a target no one else can see. So guys time to shake your brains up!!! Get the best out of yourself. As The Quiz always floats slightly above the ground!!! And only you can do it. Here you go.
                                
                             </div>
+-->
                         </div>
                     </div>
                 </div>
@@ -194,12 +221,13 @@
             <div class="ms-section" id="right3">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 ">
-                        <h1 class="event-name">CODE WAR</h1>
+                        <h1 class="event-name">PERFORMER OF THE YEAR</h1>
 
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                              
+<!--
                                 <div class="event-pera">
                                    
                                     <ol>
@@ -211,6 +239,7 @@
                                     </ol>
                                     
                                 </div>
+-->
                         </div>
                     </div>
                 </div>
@@ -220,12 +249,13 @@
             <div class="ms-section" id="right5">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 ">
-                        <h1 class="event-name">JUST CLICK</h1>
+                        <h1 class="event-name">BRAIN MARATHON</h1>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                                                           <div class="event-pera" style="font-size:10pt;">
                                    
+<!--
                                         <ol>
                                             <li>Register on www.cadnitd.co.in</li>
                                             <li>You need to send the photo to <a target="_top" href="mailto:justclickts@gmail.com" style="color:crimson">justclickts@gmail.com</a> from your registered email id between 28th SEPT 2015 and 1st OCT 2015</li>
@@ -239,6 +269,7 @@
                                             <li>Winners will be decided with 50% weightage from number of Likes on your photo on our FB page and 50% weightage will be on our judges decision</li>
                                         </ol>
                                                               
+-->
                                       
                              
                                 </div>
@@ -249,6 +280,32 @@
             </div>
             <div class="ms-section" id="right6">
             </div>
+            
+            <div class="ms-section" id="right7">
+                     <div class="row">
+                    <div class="col-lg-12 col-md-12 ">
+                        <h1 class="event-name">COUNTER STRIKE</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="ms-section" id="right8">
+            </div>
+            
+<!--
+            <div class="ms-section" id="right9">
+            </div>
+            
+            <div class="ms-section" id="right10">
+            </div>
+-->
         </div>
     </div>
 

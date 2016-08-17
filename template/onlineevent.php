@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title><?=$title ?></title>
+    <title>Online Events | Technoshine X.6</title>
     <meta name="description" content="Online event of technoshinex6" />
     <meta name="keywords" content="onlineevent, technoshinex6 " />
     <meta name="Resource-type" content="Document" />
@@ -27,7 +27,7 @@
         $(document).ready(function () {
             $('#myContainer').multiscroll({
                 //sectionsColor: ['transparent', 'transparent', 'white','white','white','white'],
-                //anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth'],
+               // anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth'],
                 menu: '#menu',
                 easing: 'easeInOutCubic',
                 onLeave: function (index, nextIndex, direction) {
@@ -106,7 +106,7 @@
      
    </a>
 -->
-           <a href="<?=$GLOBALS['site.root']?>/">  <i class="fa fa-arrow-left"></i></a> 
+           <a href="index.html">  <i class="fa fa-arrow-left"></i></a> 
  </div>
         <div class="ms-left">
             <div class="ms-section" id="left1">
@@ -115,12 +115,13 @@
 
                 <div class="row">
                     <div class="col-lg-12 col-md-12 ">
-                        <h1 class="event-name">TREASURE HUNT</h1>
+                        <h1 class="event-name">CODE WARE</h1>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                              <div class="event-pera">
                                
+<!--
                                    
                                     <li>It is a team event, each team has 2 members</li>
                                     <li>It will consist of 3 rounds ,round 1 is paper based ,selected team from round 1 goes to round 2 which is app based &amp; shortlisted team will face the third round which is purely based on coding</li>
@@ -128,6 +129,7 @@
                                     <li>Round 3 is the coding round which is of 2 hours.</li>
                                     <li>For round 3 participants should have to bring their own laptops.</li>
                                 
+-->
                                
                             </div>
                         </div>
@@ -141,24 +143,29 @@
 
                 <div class="row">
                     <div class="col-lg-12 col-md-12 ">
-                        <h1 class="event-name">GADGET GURU</h1>
+                        <h1 class="event-name">JUST CLICK</h1>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                               <div class="event-pera">
 
+<!--
                                 This events for specially for who loves the gadget’s. The whole event based on latest Gadget‘s.
                                 
                                 <br>Winners get prize money
                                 <br>
+-->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+<!--
             <div class="ms-section" id="left5">
 
             </div>
+-->
+<!--
             <div class="ms-section" id="left6">
 
                 <div class="row">
@@ -172,18 +179,21 @@
                     </div>
                 </div>
             </div>
+-->
         </div>
         <div class="ms-right">
             <div class="ms-section" id="right1">
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
-                        <h1 class="event-name">BRAIN MARATHON</h1>
+                        <h1 class="event-name">NET HUNT</h1>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                               <div class="event-pera">
+<!--
                                 Talent hits a target no one else can hit. Genius hits a target no one else can see. So guys time to shake your brains up!!! Get the best out of yourself. As The Quiz always floats slightly above the ground!!! And only you can do it. Here you go.
                                
+-->
                             </div>
                         </div>
                     </div>
@@ -194,7 +204,7 @@
             <div class="ms-section" id="right3">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 ">
-                        <h1 class="event-name">CODE WAR</h1>
+                        <h1 class="event-name">INSPIRE INDIA</h1>
 
                     </div>
                     <div class="row">
@@ -202,6 +212,7 @@
                              
                                 <div class="event-pera">
                                    
+<!--
                                     <ol>
                                         <li>Go to Codechef, login and register for the contest "CODEWAR"</li>
                                         <li>The contest will be a 5 hour coding marathon</li>
@@ -209,6 +220,7 @@
                                         <li>There will be five questions of different difficulties</li>
                                         <li>Winner will be selected according to the leaderboard</li>
                                     </ol>
+-->
                                     
                                 </div>
                         </div>
@@ -217,6 +229,7 @@
             </div>
             <div class="ms-section" id="right4">
             </div>
+<!--
             <div class="ms-section" id="right5">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 ">
@@ -247,8 +260,11 @@
                 </div>
 
             </div>
+-->
+<!--
             <div class="ms-section" id="right6">
             </div>
+-->
         </div>
     </div>
 
