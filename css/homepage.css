@@ -356,3 +356,25 @@
         font-size: 
     }
 }
+
+/*
+ BACKGROUND CIRCLE ANIMATION
+*/
+#slide1bg {
+    z-index: 0;
+    
+/*    background: rgba(0, 0, 0, 0.5);*/
+}
+#slide1bg:before {
+    z-index: 1;
+    background: url("../images/image-overlay.png") repeat;
+    opacity: 0.6;
+}
+.bgcircle {
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}

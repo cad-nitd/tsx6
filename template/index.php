@@ -22,7 +22,6 @@
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/sponser.css" />
     <link rel="stylesheet" type="text/css" href="css/mobile.css" />
 
     <link rel="stylesheet" type="text/css" href="css/homepage.css" />
@@ -141,6 +140,7 @@
             <div class="sl-slider">
                 <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
                     <div id="slide1bg"></div>
+                    <script src="js/comic_back_css.js"></script>
                     <div class="sl-slide-inner">
                         <img src="images/cad_logo.png" alt="cadlogo" class="cadlogo">
                         <img src="images/nitlogo.png" alt="nitlogo" class="nitlogo">
