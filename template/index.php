@@ -146,7 +146,7 @@
                         <img src="images/nitlogo.png" alt="nitlogo" class="nitlogo">
                         <!-- end overlay -->
                         <div class="overlay-wrapper">
-                            <div style="cursor:pointer; margin-right:10px;"><a class="btn1 btn1-dark overlay-btn overlay-btnhomeeffect" href='<?=$GLOBALS[' site.root ']?>/register'>REGISTER</a></div>
+                            <div style="cursor:pointer; margin-right:10px;"><a class="btn1 btn1-dark overlay-btn overlay-btnhomeeffect" href='<?=$GLOBALS['site.root']?>/register'>REGISTER</a></div>
                             <label for="modal3">
 
                                 <div style="cursor:pointer; margin-right:10px;"><a class="btn1 btn1-dark overlay-btn overlay-btnhomeeffect">WHAT?</a></div>
