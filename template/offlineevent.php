@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Online Events | Technoshine X.6</title>
+    <title>Offline Events | Technoshine X.6</title>
     <meta name="description" content="Online event of technoshinex6" />
     <meta name="keywords" content="onlineevent, technoshinex6 " />
     <meta name="Resource-type" content="Document" />
@@ -23,7 +24,7 @@
     <script type="text/javascript" src="js/jquery.multiscroll.js"></script>
 
     <script type="text/javascript">
-        var colors = ['rgba(239, 207, 168, 0.76)', 'rgb(207, 168, 109', 'rgba(174, 60, 60, 0.7)', 'rgba(75, 185, 212, 0.74)', 'rgba(113, 166, 84, 0.63)', 'rgba(199, 139, 17, 0.77)',  'rgba(199, 139, 17, 0.77)', 'rgba(199, 139, 17, 0.77)',  'rgba(199, 139, 17, 0.77)'];
+        var colors = ['rgba(239, 207, 168, 0.76)', 'rgba(41, 175, 209, 0.71)', 'rgba(40, 36, 36, 0.38)', 'rgba(248, 147, 29, 0.64)', 'rgba(82, 120, 122, 0.63)', 'rgba(199, 139, 17, 0.77)',  'rgba(220, 213, 152, 0.83)', 'rgba(199, 139, 17, 0.77)',  'rgba(253, 201, 144, 0.89)','rgba(253, 201, 144, 0.89)'];
         $(document).ready(function () {
             $('#myContainer').multiscroll({
                 //sectionsColor: ['transparent', 'transparent', 'white','white','white','white'],
@@ -106,7 +107,7 @@
      
    </a>
 -->
-           <a href="index.html">  <i class="fa fa-arrow-left"></i></a> 
+           <a href="/#2">  <i class="fa fa-arrow-left"></i></a> 
  </div>
         <div class="ms-left">
             <div class="ms-section" id="left1">
@@ -122,13 +123,11 @@
                              <div class="event-pera">
                                
                                    
-<!--
-                                    <li>It is a team event, each team has 2 members</li>
-                                    <li>It will consist of 3 rounds ,round 1 is paper based ,selected team from round 1 goes to round 2 which is app based &amp; shortlisted team will face the third round which is purely based on coding</li>
-                                    <li>Round 1 &amp; 2 will be of 30 minutes each &amp; consist of multiple choice question</li>
-                                    <li>Round 3 is the coding round which is of 2 hours.</li>
-                                    <li>For round 3 participants should have to bring their own laptops.</li>
--->
+ Are you a Gadget freak? Always google in searching latest technology
+advancements? If yes, then participate in this geeky event to analyse your knowledge about
+technology gadgets with our trivia challenge. So come, put your skills to the test in this ultimate
+gadget quiz and win exciting cash prizes.
+
                                 
                                
                             </div>
@@ -149,12 +148,7 @@
                         <div class="col-lg-12 col-md-12">
                               <div class="event-pera">
 
-<!--
-                                This events for specially for who loves the gadget’s. The whole event based on latest Gadget‘s.
-                                
-                                <br>Winners get prize money
-                                <br>
--->
+Good in understanding and implementing the concepts of data and packet transfer through computer networks? Then answer some interesting questions on the concepts of computer networking and implement some socket programs to build your way to success!
                             </div>
                         </div>
                     </div>
@@ -171,12 +165,14 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-<!--                            <h2 class="event-pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h2>-->
+                            <div class="event-pera">
+Are you the born-dancer, the oh-so-perfect singer or the actor deserving a standing ovation? Then this is the perfect platform for you to showcase your talents. Come, participate and win the most memorable title of the lot: The Performer of the Year.
+                                </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="ms-section" id="left7">
+            <div class="ms-section landscape" id="left7">
             </div>
 <div class="ms-section" id="left8">
          <div class="row">
@@ -186,14 +182,16 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-
+                             <div class="event-pera">
+Bring out the Bond in you. Solve the riddles at each stage as fast as you can, or opt for some alternative tasks. Knowledge of the campus, and shortcuts routes from one location to another can help you reach the destinations faster. Be the team covering the maximum number of destination points within the stipulated time period to be the winners!
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-<!--
+
 <div class="ms-section" id="left9">
-            </div>
+            </div><!--
 <div class="ms-section" id="left10">
             </div>
 -->
@@ -202,16 +200,18 @@
             <div class="ms-section" id="right1">
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
-                        <h1 class="event-name">TOTAL CHAOS</h1>
+                        <h1 class="event-name">BRAIN MARATHON </h1>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-<!--
-                              <div class="event-pera">
-                                Talent hits a target no one else can hit. Genius hits a target no one else can see. So guys time to shake your brains up!!! Get the best out of yourself. As The Quiz always floats slightly above the ground!!! And only you can do it. Here you go.
-                               
+                             <div class="event-pera">
+ How well is your General knowledge? Are you aware of latest competitions
+and changes happening across the globe? Now the platform has come to your way to assess your
+awareness from all categories. This factful event provides you a great opportunity to unveil your
+talent, ability and skills by fighting in war of minds . Now stir yourself, spike your knowledge and
+run your brains to conquest this marathon of mind. 
+
                             </div>
--->
                         </div>
                     </div>
                 </div>
@@ -221,55 +221,33 @@
             <div class="ms-section" id="right3">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 ">
-                        <h1 class="event-name">PERFORMER OF THE YEAR</h1>
+                        <h1 class="event-name">FACE PAINTING</h1>
 
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-                             
-<!--
-                                <div class="event-pera">
-                                   
-                                    <ol>
-                                        <li>Go to Codechef, login and register for the contest "CODEWAR"</li>
-                                        <li>The contest will be a 5 hour coding marathon</li>
-                                        <li>Participation will be Individual</li>
-                                        <li>There will be five questions of different difficulties</li>
-                                        <li>Winner will be selected according to the leaderboard</li>
-                                    </ol>
-                                    
-                                </div>
--->
+                              <div class="event-pera">
+ Do you want to express your feelings by painting the face of one of your
+lovable friend? If yes, then this is the exact platform for you to express how you think about certain
+things and also your general ideas about life and everything which is encountered. So participate,
+emblazon your talent and win this sparkling title of tattoo maker.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="ms-section" id="right4">
+            <div class="ms-section landscape" id="right4">
             </div>
             <div class="ms-section" id="right5">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 ">
-                        <h1 class="event-name">BRAIN MARATHON</h1>
+                        <h1 class="event-name">TOTAL CHAOS </h1>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-                                                          <div class="event-pera" style="font-size:10pt;">
+                                                          <div class="event-pera" >
                                    
-<!--
-                                        <ol>
-                                            <li>Register on www.cadnitd.co.in</li>
-                                            <li>You need to send the photo to <a target="_top" href="mailto:justclickts@gmail.com" style="color:crimson">justclickts@gmail.com</a> from your registered email id between 28th SEPT 2015 and 1st OCT 2015</li>
-                                            <li>The Submission of more than one picture will lead to disqualification</li>
-                                            <li>The Submission must be a digital photo clicked by yourself</li>
-                                            <li>The Submission must be entrant's original creation and owned fully by the entrant</li>
-                                            <li>The Submission must demonstrate one of the following contest themes: <span style="color:green">Open, Landscape</span></li>
-                                            <li>The Submission will be uploaded on our facebook page, you have to get as much likes as possible on your picture before 2nd OCT 2015</li>
-
-                                            <li>One has to like <a style="color:red" href="https://www.facebook.com/technoshinex.5">Technoshine X.5 page</a> for their like to be considered</li>
-                                            <li>Winners will be decided with 50% weightage from number of Likes on your photo on our FB page and 50% weightage will be on our judges decision</li>
-                                        </ol>
-                                                              
--->
+Present us with your talent of multitasking and your knowledge of the computer system! Clear out the chaos in your minds, and start brainstorming with your team mates to solve the different aptitude, reasoning and system-based problems to be the ultimate winners.
                                       
                              
                                 </div>
@@ -289,7 +267,12 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-
+                             <div class="event-pera">
+ Are you interested in Gaming? Yes ?,then this is the appurtenant opportunity
+for you to concur in this first person shooter game. Each team attempts to complete their mission
+objective and/or eliminate the opposing team. So gear up guys for this amazing event, cash prizes
+are waiting for you.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -299,10 +282,23 @@
             <div class="ms-section" id="right8">
             </div>
             
-<!--
+
             <div class="ms-section" id="right9">
+                                    <div class="row">
+                    <div class="col-lg-12 col-md-12 ">
+                        <h1 class="event-name">TRICKOLOGY</h1>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                             <div class="event-pera">
+Clear your basics in high level languages.If you are the program-freak, this will be a cake walk for you!  Check the syntax, predict the outputs and answer some basic questions to earn points. 
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+ <!--           
             <div class="ms-section" id="right10">
             </div>
 -->

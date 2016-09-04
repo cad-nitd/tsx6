@@ -10,6 +10,8 @@ $app->get('/', function () use($TEMPLATE) {
     return $TEMPLATE->render('index',$params);
 });
 
+
+
 $app->post('/user', function() use ($USER) {
     $email=$_POST['email'];
     
@@ -20,16 +22,19 @@ $app->post('/user', function() use ($USER) {
     return json_encode($response);
 });
 
-$app->match('/login', function () use($TEMPLATE,$DB) {    
+$app->match('/login', function () use($TEMPLATE,$DB) { 
+    $message="";
+    if( isset($_GET["message"]) ) {
+        $message=$_GET["message"];
+        seturl("/login");
+    }
     return $TEMPLATE->render('login',
                              ["title" => "Login | Technoshine X.6",
-                              "message"=>""] );
+                              "message"=>$message] );
 });
 
 $app->get('/email-sent', function () use($TEMPLATE,$DB) {    
-    return $TEMPLATE->render('login',
-                             ["title" => "Login | Technoshine X.6",
-                              "message"=>"Verify email. Mail has been sent to your email"] );
+    redirect("/login",["message"=>"Verification Mail has been sent to your email"]);
 });
 
 $app->match('/logout', function () use($USER) {
@@ -52,6 +57,7 @@ $app->get('/offline-event', function () use($TEMPLATE) {
     return $TEMPLATE->render('offlineevent');
 });
 
+
 $app->get('/activate', function () use ($USER,$TEMPLATE) {
     if( isset($_GET['email']) && isset($_GET['hash']) ) {
         
@@ -62,7 +68,7 @@ $app->get('/activate', function () use ($USER,$TEMPLATE) {
         //die();
         
         if($USER->activate($email,$hash)) {
-	        redirect('/login');
+	        redirect('/login',["message" => "Your account is activated. Please Login"]);
            /* return $TEMPLATE->render('login',
                              ["title" => "Login | Technoshine X.6",
                              "message" => "Your account is activated. Please Login"]);*/

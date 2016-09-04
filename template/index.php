@@ -146,7 +146,13 @@
                         <img src="images/nitlogo.png" alt="nitlogo" class="nitlogo">
                         <!-- end overlay -->
                         <div class="overlay-wrapper">
-                            <div style="cursor:pointer; margin-right:10px;"><a class="btn1 btn1-dark overlay-btn overlay-btnhomeeffect" href='<?=$GLOBALS['site.root']?>/register'>REGISTER</a></div>
+                            <?php 
+                                global $USER;
+                                if(!$USER->logged_in()){
+                                
+                            echo "<div style='cursor:pointer; margin-right:10px;'><a class='btn1 btn1-dark overlay-btn overlay-btnhomeeffect' href='".$GLOBALS['site.root']."/register'>REGISTER</a></div>";
+                                } 
+                            ?>
                             <label for="modal3">
 
                                 <div style="cursor:pointer; margin-right:10px;"><a class="btn1 btn1-dark overlay-btn overlay-btnhomeeffect">WHAT?</a></div>
@@ -215,7 +221,7 @@
                             <div class="container-fluid" style="padding-top:0px;">
                                 <div class="row banner-heading" id="member-heading">
                                     <div class="col-lg-12 col-md-12 col-sm-12">
-                                        <p class="overlay-heading">MEMBERS</p>
+                                        <p class="overlay-heading">TEAM</p>
                                     </div>
                                 </div>
                                 <div class="container">
@@ -240,16 +246,17 @@
                                             <p class="mebname">Souradeep Saha</p>
                                             <p class="stylemeb"><em>General Secretary</em></p>
                                         </div>
+                                           <div class="col-lg-2 col-md-2">
+                                            <img class=" mebimg img-circle" src="images/team/tiwari.jpg">
+                                            <p class="mebname">Sourabh Tiwari</p>
+                                            <p class="stylemeb"><em>Treasurer</em></p>
+                                        </div>
                                         <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/manisha.jpg">
                                             <p class="mebname">Manisha Kumari</p>
                                             <p class="stylemeb"><em>Treasurer</em></p>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class=" mebimg img-circle" src="images/team/tiwari.jpg">
-                                            <p class="mebname">Sourabh Tiwari</p>
-                                            <p class="stylemeb"><em>Treasurer</em></p>
-                                        </div>
+                                     
 
                                     </div>
                                     <div class="row" style="margin-top:20px;">
@@ -340,7 +347,7 @@
                                         <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/uttam.jpg">
                                             <p class="mebname">Uttam Omar</p>
-                                            <p class="stylemeb"><em>Web Devlopment Team</em></p>
+                                            <p class="stylemeb"><em>Web Development Team</em></p>
                                         </div>
 
                                         <div class="col-lg-2 col-md-2">
@@ -361,24 +368,26 @@
                                         <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/deepanshu.jpg">
                                             <p class="mebname">Deepanshu Sharma</p>
-                                            <p class="stylemeb"><em>Devlopment team</em></p>
+                                            <p class="stylemeb"><em>Android Team</em></p>
                                         </div>
+                                        
+                                           <div class="col-lg-2 col-md-2">
+                                            <img class="img-circle mebimg" src="images/team/Sujeet.jpeg">
+                                            <p class="mebname">Sujeet Kumar Gupta</p>
+                                            <p class="stylemeb"><em>Android Team</em></p>
+                                        </div>
+
 
                                         <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/saroj.jpg">
                                             <p class="mebname">Saroj Kumar</p>
                                             <p class="stylemeb"><em>Development Team</em></p>
                                         </div>
-                                        <div class="col-lg-2 col-md-2">
-                                            <img class="img-circle mebimg" src="images/team/Sujeet.jpeg">
-                                            <p class="mebname">Sujeet Kumar Gupta</p>
-                                            <p class="stylemeb"><em>Development Team</em></p>
-                                        </div>
-
+                                     
                                         <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/deblina.jpeg">
                                             <p class="mebname">Deblina Banerjee</p>
-                                            <p class="stylemeb"><em>Devlopment Team</em></p>
+                                            <p class="stylemeb"><em>Development Team</em></p>
                                         </div>
                                         <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/ashu.jpg">
@@ -401,7 +410,7 @@
                                         </div>
                                         <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/rahul_ravi.jpg">
-                                            <p class="mebname">Rahul RAvi Prakash</p>
+                                            <p class="mebname">Rahul Ravi Prakash</p>
                                             <p class="stylemeb"><em>Designing Team</em></p>
                                         </div>
                                         <div class="col-lg-2 col-md-2">
@@ -979,11 +988,11 @@
                                         <i class="fa fa-phone phone"></i>
                                     </a>
                                     <div class="contact-desc">
-                                        <p>9834015103</p>
+                                        <p>+91-9007386263</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-2 col-md-2 social">
-                                    <a class="btn btn-social-icon btn-twitter">
+                                    <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/technoshinex6">
                                         <i class="fa fa-twitter iconcolor"></i>
                                     </a>
                                     <p>Twitter</p>
@@ -995,7 +1004,7 @@
                                     <p>Facebook</p>
                                 </div>
                                 <div class="col-lg-2 col-md-2 social">
-                                    <a class="btn btn-social-icon btn-youtube" href="https://www.youtube.com/embed/_yXcoACi0kE" target="_blank">
+                                    <a class="btn btn-social-icon btn-youtube" href="https://www.youtube.com/embed/xxpE7jyMh30" target="_blank">
                                         <i class="fa fa-youtube yticoncolor"></i>
                                     </a>
                                     <p>YouTube</p>
@@ -1015,7 +1024,7 @@
                     <span class="nav-dot-current" data-toggle="tooltip" data-placement="top" title="Home"></span>
                     <span data-toggle="tooltip" data-placement="top" title="Online Event"></span>
                     <span data-toggle="tooltip" data-placement="top" title="Offline Event"></span>
-                    <span data-toggle="tooltip" data-placement="top" title="Member"></span>
+                    <span data-toggle="tooltip" data-placement="top" title="Team"></span>
                     <span data-toggle="tooltip" data-placement="top" title="Sponsors"></span>
                     <span data-toggle="tooltip" data-placement="top" title="Where?"></span>
                 </nav>

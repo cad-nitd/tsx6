@@ -106,7 +106,7 @@
      
    </a>
 -->
-           <a href="index.html">  <i class="fa fa-arrow-left"></i></a> 
+           <a href="<?=$GLOBALS['site.root']?>/#1">  <i class="fa fa-arrow-left"></i></a> 
  </div>
         <div class="ms-left">
             <div class="ms-section" id="left1">
@@ -121,15 +121,7 @@
                         <div class="col-lg-12 col-md-12">
                              <div class="event-pera">
                                
-<!--
-                                   
-                                    <li>It is a team event, each team has 2 members</li>
-                                    <li>It will consist of 3 rounds ,round 1 is paper based ,selected team from round 1 goes to round 2 which is app based &amp; shortlisted team will face the third round which is purely based on coding</li>
-                                    <li>Round 1 &amp; 2 will be of 30 minutes each &amp; consist of multiple choice question</li>
-                                    <li>Round 3 is the coding round which is of 2 hours.</li>
-                                    <li>For round 3 participants should have to bring their own laptops.</li>
-                                
--->
+A coding competition not only for the geeks but also for the novice. Code,successfully compile and pass all the test-cases to retain your position at the top of the leader-board. So polish up your coding skills to win cash prizes. 
                                
                             </div>
                         </div>
@@ -149,12 +141,7 @@
                         <div class="col-lg-12 col-md-12">
                               <div class="event-pera">
 
-<!--
-                                This events for specially for who loves the gadget’s. The whole event based on latest Gadget‘s.
-                                
-                                <br>Winners get prize money
-                                <br>
--->
+Can your facebook friends help you win a contest? Show us your popularity by attaining the maximum numbers of likes on your picture, or by depicting the best thought on the theme provided. Click!! Click!!  
                             </div>
                         </div>
                     </div>
@@ -190,10 +177,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                               <div class="event-pera">
-<!--
-                                Talent hits a target no one else can hit. Genius hits a target no one else can see. So guys time to shake your brains up!!! Get the best out of yourself. As The Quiz always floats slightly above the ground!!! And only you can do it. Here you go.
-                               
--->
+Is your Google-fu strong enough to win you a prize? Surf the internet and bring us the correct answer for the given question. Only a correct answer will help you clear the levels. Aim? To reach the highest level possible!
                             </div>
                         </div>
                     </div>
@@ -212,15 +196,7 @@
                              
                                 <div class="event-pera">
                                    
-<!--
-                                    <ol>
-                                        <li>Go to Codechef, login and register for the contest "CODEWAR"</li>
-                                        <li>The contest will be a 5 hour coding marathon</li>
-                                        <li>Participation will be Individual</li>
-                                        <li>There will be five questions of different difficulties</li>
-                                        <li>Winner will be selected according to the leaderboard</li>
-                                    </ol>
--->
+It’s time for you to inspire the folks by writing your hearts out. Show us your creativity, write something out of the box on any of the topics provided, and lead among the pack of participants. Imagine, Implement and Inspire!!
                                     
                                 </div>
                         </div>

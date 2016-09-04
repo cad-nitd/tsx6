@@ -103,8 +103,8 @@ CREATE TABLE IF NOT EXISTS `schedule` (
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
-  `first` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-  `last` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `firstname` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `lastname` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
   `contact` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
   `college` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
   `country` varchar(30) COLLATE utf8_unicode_ci NOT NULL,

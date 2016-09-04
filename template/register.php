@@ -95,7 +95,7 @@ function check() {
 }
 
 
-if(isset($_POST['submit']) && $_POST['submit']=="REGISTRATION" && check()){
+if(isset($_POST['submit']) && $_POST['submit']=="REGISTRER" && check()){
 //   $_POST['submit']=="REGISTRATION" && checkVals()){
     global $DB;
     global $USER;
@@ -271,7 +271,7 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTRATION" && check()){
         <div class="container-fluid">
             <div class="row banner-heading" id="sponsor-heading">
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <p class="overlay-heading">REGISTRATION</p>
+                    <p class="overlay-heading">REGISTER</p>
                 </div>
             </div>
 
@@ -609,7 +609,7 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTRATION" && check()){
                             </div>
                         </div>
                     </div>
-                    <input type="submit" name="submit" id="submit" class="btn2 btn2-dark overlay-btn overlay-wrapper " value="REGISTRATION" />
+                    <input type="submit" name="submit" id="submit" class="btn2 btn2-dark overlay-btn overlay-wrapper " value="REGISTER" />
                 </form>
             </div>
         </div>

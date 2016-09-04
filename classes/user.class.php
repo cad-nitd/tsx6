@@ -138,6 +138,8 @@ class User {
          	return;
         
         $details = $this->get_details($email);
+        //dump($details);
+        //die();
         require "PHPMailer-master/PHPMailerAutoload.php";
 
         $mail = new PHPMailer();
@@ -153,7 +155,7 @@ class User {
         $mail->Port = 587;//465                                    // TCP port to connect to
 
         $mail->SetFrom('technoshine.ca@gmail.com', 'Technoshine X.6');
-        $mail->AddAddress($email, $name);
+        $mail->AddAddress($email, $details['name']);
         //$mail->AddReplyTo('technoshine.ca@gmail.com', 'Technoshine X.6');
         //$mail->addCC('technoshine.ca@gmail.com');
         
@@ -164,7 +166,7 @@ class User {
         $message = "Hi,<br><br>
         To Activate your Technoshine X.6 Registration, please click on this<br><br>";
         $message .= "<a href='";
-	$message .= "http://www.cadnitd.co.in/activate?email=".urlencode($details['email'])."&hash=".$details['hash'];
+        $message .= "http://www.cadnitd.co.in/activate?email=".urlencode($details['email'])."&hash=".$details['hash'];
         $message .= "'>VERIFY</a>";       
         $message .= "<br><br>Have a Code-tastic Day!!!";
         

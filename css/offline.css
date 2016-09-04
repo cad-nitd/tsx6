@@ -1,22 +1,23 @@
 #left1 {
-    background: url("../images/onlineimg/TC.jpg");
+    background: url("../images/onlineimg/BM.jpg");
 }
+
 
 #right2 {
     background: url("../images/onlineimg/GG.jpg");
 }
 
 #left3 {
-    background: url("../images/onlineimg/ii.jpg");
+    background: url("../images/onlineimg/FP.jpg");
 }
 
 #right4 {
     background: url("../images/onlineimg/SockCombat.jpg");
 }
-
 #left5 {
-    background: url("../images/onlineimg/BM.jpg");
+    background: url("../images/onlineimg/TC.jpg");
 }
+
 
 #right6 {
     background: url("../images/onlineimg/POY.jpg");
@@ -28,17 +29,24 @@
 #right8{
     background: url("../images/onlineimg/TH.jpg")
 }
+#left9{
+    background: url("../images/onlineimg/trickology.jpg")
+}
 
 #left1,
 #right2,
 #left3,
 #right4,
 #left5,
-#right6,#right8,#left7 {
+#right6,#right8,#left7,#left9 {
     background-position: center center;
 /*    background-size: 100% auto;*/
     background-size: auto 90vh;
     background-repeat: no-repeat;
+}
+
+.landscape {
+    background-size: 45vw auto !important;
 }
 
 body {
