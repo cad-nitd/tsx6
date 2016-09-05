@@ -42,6 +42,8 @@
     <script src="js/headingmm.js"></script>
 </head>
 <style>
+    .js div#preloader { position: fixed; left: 0; top: 0; z-index: 100000; width: 100%; height: 100%; overflow: visible; background: #333 url('images/loader/hourglass.svg') no-repeat center center; }
+
     /*
     .navbar {
    background-color: transparent;
@@ -52,8 +54,9 @@
 */
     /*.navbar li { color: #000 } */
 </style>
-
-<body>
+<div class="js"><!--this is supposed to be on the HTML element but codepen won't let me do it-->
+  <body>
+    <div id="preloader"></div>
     <nav style="z-index:10; background:#ffc861;" class="navbar navbar-default visible-xs">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -1138,6 +1141,15 @@
             $(function () {
                 $('[data-toggle="tooltip"]').tooltip();
             })
+            
+            jQuery(document).ready(function($) {  
+
+// site preloader -- also uncomment the div in the header and the css style for #preloader
+$(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
+
+});
         </script>
     </div>
 
