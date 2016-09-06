@@ -95,7 +95,7 @@ function check() {
 }
 
 
-if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
+if(isset($_POST['submit']) && $_POST['submit']=="REGISTRER" && check()){
 //   $_POST['submit']=="REGISTRATION" && checkVals()){
     global $DB;
     global $USER;
@@ -210,13 +210,14 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
             color: darkgrey;
         }
         
-          select:valid {
+        select:valid {
             color: black;
         }
         
         option {
             color: black;
         }
+        
         .input-style {
             border: 0px;
             border-bottom: 2px dashed #ffc75e;
@@ -270,7 +271,7 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
         <div class="container-fluid">
             <div class="row banner-heading" id="sponsor-heading">
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <p class="overlay-heading">REGISTRATION</p>
+                    <p class="overlay-heading">REGISTER</p>
                 </div>
             </div>
 
@@ -321,7 +322,7 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
                             <i class="fa fa-flag"></i>
                         </span>
                                         <select class="input-lg" name="country" required>
-                                            <option value="" disabled selected hidden >Country</option>
+                                            <option value="" disabled selected hidden>Country</option>
                                             <option value="Afganistan">Afghanistan</option>
                                             <option value="Albania">Albania</option>
                                             <option value="Algeria">Algeria</option>
@@ -588,7 +589,7 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
                                         <span class="input-icon">
                             <i class="fa fa-lock"></i>
                         </span>
-                                        <input class="input-lg" type="password" name="password" placeholder="Password" />
+                                        <input class="input-lg" type="password" name="password" placeholder="password" />
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
@@ -608,7 +609,7 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
                             </div>
                         </div>
                     </div>
-                    <input type="submit" name="submit" id="submit" style="bottom:46px;" class="btn2 btn2-dark overlay-btn overlay-wrapper " value="REGISTER" />
+                    <input type="submit" name="submit" id="submit" class="btn2 btn2-dark overlay-btn overlay-wrapper " value="REGISTER" />
                 </form>
             </div>
         </div>
@@ -625,7 +626,7 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
                 }
                 validation = /^[a-zA-Z'-]+$/;
                 if (!validation.test(firstname)) {
-                    error.innerHTML = "Use only alphabets in fisrt name";
+                    error.innerHTML = "Use only alphabets for first name";
                     return false;
                 }
 
@@ -637,7 +638,7 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
                 }
                 validation = /^[a-zA-Z'-]+$/;
                 if (!validation.test(lastname)) {
-                    error.innerHTML = "Use only alphabets in last name";
+                    error.innerHTML = "Use only alphabets for last name";
                     return false;
                 }
 
@@ -654,10 +655,10 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
                     document.reg_form.contact.value = "";
                     return false;
                 }
-                
+
                 //COLLEGE
-                
-                 var college = document.reg_form.college.value;
+
+                var college = document.reg_form.college.value;
                 if (college == "") {
                     error.innerHTML = "PLease Enter a College Name";
                     return false;
@@ -668,28 +669,28 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
                     error.innerHTML = " Enter a valid College Name";
                     return false;
                 }
-                
+
                 //EMAIL
                 var email = document.reg_form.email.value;
                 if (email == "") {
                     error.innerHTML = "Please Enter a Email";
                     return false;
                 }
-                
+
                 //PASSWORD
-                 var password = document.reg_form.password.value;
+                var password = document.reg_form.password.value;
                 if (password == "") {
                     error.innerHTML = "PLease Enter a Password";
                     return false;
                 }
-                
+
                 //VERIFYPASSWORD
                 var verifypassword = document.reg_form.verifypassword.value;
                 if (verifypasswordpassword == "") {
                     error.innerHTML = "PLease Enter a VerifyPassword";
                     return false;
                 }
-                
+
                 //PASSWORD MATCH
                 var pass = document.reg_form.password.value;
                 var cpass = document.reg_form.verifypassword.value;
@@ -698,7 +699,7 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
                     return false;
                 }
 
-                
+
 
 
 

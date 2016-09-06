@@ -115,7 +115,7 @@
 
                 <div class="row">
                     <div class="col-lg-12 col-md-12 ">
-                        <h1 class="event-name">CODE WARE</h1>
+                        <h1 class="event-name">CODE WAR</h1>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">

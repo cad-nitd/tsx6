@@ -1,0 +1,6 @@
+to make it local some of the changes are done and changes are 
+1. user.class 
+    a. sent mail (line 75 to 81)
+    b. sent main(line 137 to 184)
+2. register.php
+    a.line 112 to 118 (commented)

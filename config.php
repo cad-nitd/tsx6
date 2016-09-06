@@ -6,6 +6,7 @@ config('source','config.ini');
 require_once __DIR__."/classes/template.class.php";
 require_once __DIR__."/classes/database.class.php";
 require_once __DIR__."/classes/user.class.php";
+require_once __DIR__."/classes/nethunt.class.php";
 
 date_default_timezone_set('Asia/Kolkata');
 

@@ -95,7 +95,7 @@ function check() {
 }
 
 
-if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
+if(isset($_POST['submit']) && $_POST['submit']=="REGISTRATION" && check()){
 //   $_POST['submit']=="REGISTRATION" && checkVals()){
     global $DB;
     global $USER;
@@ -209,14 +209,14 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
             line-height: 46px;
             color: darkgrey;
         }
-        
-          select:valid {
+         select:valid {
             color: black;
         }
         
         option {
             color: black;
         }
+        
         .input-style {
             border: 0px;
             border-bottom: 2px dashed #ffc75e;
@@ -320,8 +320,8 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
                                         <span class="input-icon">
                             <i class="fa fa-flag"></i>
                         </span>
-                                        <select class="input-lg" name="country" required>
-                                            <option value="" disabled selected hidden >Country</option>
+                                        <select class="input-lg" name="country">
+                                            <option value="" disabled selected hidden>Country</option>
                                             <option value="Afganistan">Afghanistan</option>
                                             <option value="Albania">Albania</option>
                                             <option value="Algeria">Algeria</option>
@@ -608,7 +608,7 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
                             </div>
                         </div>
                     </div>
-                    <input type="submit" name="submit" id="submit" style="bottom:46px;" class="btn2 btn2-dark overlay-btn overlay-wrapper " value="REGISTER" />
+                    <input type="submit" name="submit" id="submit" class="btn2 btn2-dark overlay-btn overlay-wrapper " value="REGISTRATION" />
                 </form>
             </div>
         </div>
@@ -625,19 +625,19 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
                 }
                 validation = /^[a-zA-Z'-]+$/;
                 if (!validation.test(firstname)) {
-                    error.innerHTML = "Use only alphabets in fisrt name";
+                    error.innerHTML = "Use only alphabets for first name";
                     return false;
                 }
 
                 //LASTNAME
                 var lastname = document.reg_form.lastname.value;
                 if (lastname == "") {
-                    error.innerHTML = "Please Enter a Last name";
+                    error.innerHTML = "Please Enter a Last name for second name";
                     return false;
                 }
                 validation = /^[a-zA-Z'-]+$/;
                 if (!validation.test(lastname)) {
-                    error.innerHTML = "Use only alphabets in last name";
+                    error.innerHTML = "Use only alphabets";
                     return false;
                 }
 

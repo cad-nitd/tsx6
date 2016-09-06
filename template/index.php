@@ -57,6 +57,7 @@
 <div class="js"><!--this is supposed to be on the HTML element but codepen won't let me do it-->
   <body>
     <div id="preloader"></div>
+<!--
     <nav style="z-index:10; background:#ffc861;" class="navbar navbar-default visible-xs">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -66,32 +67,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+-->
                 <!--            <a class="navbar-brand" href="#">Project name</a>-->
+<!--
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="<?=$GLOBALS['site.root']?>/#1">Home</a></li>
+                    <li><a href="<?=$GLOBALS['site.root']?>/#2">Offline Event</a></li>
+                    <li><a href="<?=$GLOBALS['site.root']?>/#3">Online Event</a></li>
+                    <li><a href="<?=$GLOBALS['site.root']?>/#3">Team</a></li>
+                    <li><a href="<?=$GLOBALS['site.root']?>/#4">Sponsors</a></li>
+                    <li><a href="<?=$GLOBALS['site.root']?>/#5">Where?</a></li>
                 </ul>
 
             </div>
+-->
             <!--/.nav-collapse -->
-        </div>
+<!--        </div>-->
         <!-- /.container-fluid -->
-    </nav>
+<!--    </nav>-->
     <!-- -->
     <div class="row">
         <div class="navbar navbar-default visible-xs">
@@ -153,7 +148,7 @@
                                 global $USER;
                                 if(!$USER->logged_in()){
                                 
-                            echo "<div style='cursor:pointer; margin-right:10px;'><a class='btn1 btn1-dark overlay-btn overlay-btnhomeeffect' href='".$GLOBALS['site.root']."/register'>REGISTER</a></div>";
+                            echo "<div style='cursor:pointer; margin-right:10px;'><a class='btn1 btn1-dark smargin overlay-btn overlay-btnhomeeffect' href='".$GLOBALS['site.root']."/register'>REGISTER</a></div>";
                                 } 
                             ?>
                             <label for="modal3">
@@ -350,7 +345,7 @@
                                         <div class="col-lg-2 col-md-2">
                                             <img class="img-circle mebimg" src="images/team/uttam.jpg">
                                             <p class="mebname">Uttam Omar</p>
-                                            <p class="stylemeb"><em>Web Development Team</em></p>
+                                            <p class="stylemeb"><em>Web Development</em></p>
                                         </div>
 
                                         <div class="col-lg-2 col-md-2">
@@ -395,7 +390,7 @@
                                         <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/ashu.jpg">
                                             <p class="mebname">Ashu Renu</p>
-                                            <p class="stylemeb"><em>Devlopment Team</em></p>
+                                            <p class="stylemeb"><em>Development Team</em></p>
                                         </div>
                                         <div class="col-lg-2 col-md-2">
                                             <img class=" mebimg img-circle" src="images/team/manish.jpg">
@@ -483,11 +478,11 @@
                             <div class="row">
 
 
-                                <div class="col-lg-5 col-md-5 col-sm-5">
+                                <div class="col-lg-4 col-md-4 col-sm-4">
                                     <img class="sponsorimg center-block" alt="" src="images/sponsors/pantaloons.png">
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 ">
-                                    <img alt="" class="sponsorimg center-block" src="images/sponsors/mageba.jpg">
+                                <div class="col-lg-5 col-md-5 col-sm-5 ">
+                                    <img alt="" class="sponsorimg center-block" src="images/sponsors/ubi.png">
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-md-3 ">
                                     <img alt="" class="sponsorimg center-block" src="images/sponsors/vatika.png">
@@ -522,6 +517,12 @@
                                     <img alt="" class="sponsorimg center-block" src="images/sponsors/studioe.jpg">
                                 </div>
 
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                 <img alt="" class="sponsorimg center-block" src="images/sponsors/mageba.jpg">
+                                </div>
+                            
                             </div>
 
                         </div>

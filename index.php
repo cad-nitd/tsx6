@@ -81,4 +81,15 @@ $app->get('/activate', function () use ($USER,$TEMPLATE) {
         redirect('/');
 });
 
+$app->match('/nethunt', function() use ($TEMPLATE,$DB,$USER) {    
+    return $TEMPLATE->render('nethunt',["title"=> "Welcome | Net Hunt"]);
+});
+$app->match('/nethunt/{level}', function($level) use ($TEMPLATE,$USER,$DB) {
+        
+    return $TEMPLATE->render('nethunt_level',
+                                ["title"=>"Level $level | Net Hunt",
+                                "level"=>$level]);
+});
+
+
 $app->run();
