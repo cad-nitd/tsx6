@@ -94,14 +94,14 @@
     .overlay-btn{
         padding:10px 5px !important;
         margin:8px;
-        
+        font-size:6pt;
         
     }
     .overlay-wrapper{
         z-index: 100000000;
     }
     .smargin{
-        left:40px;
+        left:28px;
     }
    
     .wrapper{

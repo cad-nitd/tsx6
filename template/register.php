@@ -106,13 +106,13 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
     //dump($VALUES);
     //die();
     //$uid = $DB->insert('users',$VALUES);
-    if( $USER->register($VALUES) ) {
-        $USER->send_mail($VALUES['email']);
-        redirect("/email-sent");
-    }
-    else {
-        $error="Registration unsuccessful. Try later.";
-    }
+//    if( $USER->register($VALUES) ) {
+//        $USER->send_mail($VALUES['email']);
+//        redirect("/email-sent");
+//    }
+//    else {
+//        $error="Registration unsuccessful. Try later.";
+//    }
 }
 
 ?>

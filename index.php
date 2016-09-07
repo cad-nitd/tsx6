@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 require "config.php";
 require "vendor/autoload.php";
 
@@ -89,6 +89,22 @@ $app->match('/nethunt/{level}', function($level) use ($TEMPLATE,$USER,$DB) {
     return $TEMPLATE->render('nethunt_level',
                                 ["title"=>"Level $level | Net Hunt",
                                 "level"=>$level]);
+});
+$app->match('/forgotpassword', function () use($TEMPLATE,$DB,$USER) {
+    if(isset($_GET["email"]) && isset($_GET["hash"])) {
+        $email=trim($_GET["email"]);
+        $hash=trim($_GET["hash"]);
+        seturl("/forgotpassword");
+        return $TEMPLATE->render('forgotpassword',["title"=>"Forgotpassword | Technoshine x.6",
+                                                   "email" => $email, "hash" => $hash,
+                                                  "reset"=>true]);
+    }
+    else {
+        return $TEMPLATE->render('forgotpassword',["title"=> "Forgotpassword | Technoshine x.6",
+                                               "message" => "",
+                                                  "reset"=>false]);
+    }
+
 });
 
 

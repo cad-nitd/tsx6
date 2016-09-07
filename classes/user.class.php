@@ -24,8 +24,6 @@ class User {
         return isset($_SESSION['loggedin'])? $_SESSION['loggedin']: false;
     }
     
- 
-    
     public function exists($username) {
         $query="SELECT email FROM users WHERE email=:email";
         $rows=$this->db->query($query,array("email"=>$username));
@@ -72,13 +70,13 @@ class User {
         //comment for local
         
           if(count($resultarr)) {
-//            if(!$resultarr[0]['active']){
-//               $this->send_mail($email);
-//               
-//               $return["success"]=false;
-//               $return["message"]="User not Activated. Mail has been sent again";
-//               return $return;
-//            }
+            if(!$resultarr[0]['active']){
+               $this->send_mail($email);
+               
+               $return["success"]=false;
+               $return["message"]="User not Activated. Mail has been sent again";
+               return $return;
+            }
             $_SESSION['uid']=$resultarr[0]['uid'];
             $_SESSION['email']=$resultarr[0]['email'];
             $_SESSION['firstname']=$resultarr[0]['firstname'];
@@ -134,52 +132,103 @@ class User {
         session_destroy();
     }
 
-//    function send_mail($email) {
-//    
-//    	if(!$this->exists($email))
-//         	return;
-//        
-//        $details = $this->get_details($email);
-//        //dump($details);
-//        //die();
-//        require "PHPMailer-master/PHPMailerAutoload.php";
-//
-//        $mail = new PHPMailer();
-//
-////        $mail->SMTPDebug = 2;                               // Enable verbose debug output
-//
-//        $mail->isSMTP();                                      // Set mailer to use SMTP
-//       	$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-//        $mail->SMTPAuth = true;                               // Enable SMTP authentication
-//        $mail->Username = 'technoshine.ca@gmail.com';                 // SMTP username
-//        $mail->Password = 'club@nitdgp';                           // SMTP password
-//        $mail->SMTPSecure = 'tls';//'tls';                            // Enable TLS encryption, `ssl` also accepted
-//        $mail->Port = 587;//465                                    // TCP port to connect to
-//
-//        $mail->SetFrom('technoshine.ca@gmail.com', 'Technoshine X.6');
-//        $mail->AddAddress($email, $details['name']);
-//        //$mail->AddReplyTo('technoshine.ca@gmail.com', 'Technoshine X.6');
-//        //$mail->addCC('technoshine.ca@gmail.com');
-//        
-//        $mail->isHTML(true);                                  // Set email format to HTML
-//
-//        $mail->Subject = 'Technoshine X.6 - Account Activation';
-//
-//        $message = "Hi,<br><br>
-//        To Activate your Technoshine X.6 Registration, please click on this<br><br>";
-//        $message .= "<a href='";
-//        $message .= "http://www.cadnitd.co.in/activate?email=".urlencode($details['email'])."&hash=".$details['hash'];
-//        $message .= "'>VERIFY</a>";       
-//        $message .= "<br><br>Have a Code-tastic Day!!!";
-//        
-//        $mail->Body    = $message;
-//
-//        if(!$mail->Send()) {
-//            echo 'Message could not be sent.';
-//            echo 'Mailer Error: ' . $mail->ErrorInfo;
-//        } else {
-//            //echo 'Message has been sent';
-//        }
-//	//die();
-//	}	
+    function send_reset_mail($email) {
+    
+    	if(!$this->exists($email))
+         	return;
+        
+        $details = $this->get_details($email);
+        //dump($details);
+        //die();
+        require "PHPMailer-master/PHPMailerAutoload.php";
+
+        $mail = new PHPMailer();
+
+//        $mail->SMTPDebug = 2;                               // Enable verbose debug output
+
+        $mail->isSMTP();                                      // Set mailer to use SMTP
+       	$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+        $mail->SMTPAuth = true;                               // Enable SMTP authentication
+        $mail->Username = 'technoshine.ca@gmail.com';                 // SMTP username
+        $mail->Password = 'club@nitdgp';                           // SMTP password
+        $mail->SMTPSecure = 'tls';//'tls';                            // Enable TLS encryption, `ssl` also accepted
+        $mail->Port = 587;//465                                    // TCP port to connect to
+
+        $mail->SetFrom('technoshine.ca@gmail.com', 'Technoshine X.6');
+        $mail->AddAddress($email, $details['firstname']);
+        //$mail->AddReplyTo('technoshine.ca@gmail.com', 'Technoshine X.6');
+        //$mail->addCC('technoshine.ca@gmail.com');
+        
+        $mail->isHTML(true);                                  // Set email format to HTML
+
+        $mail->Subject = 'Technoshine X.6 - Password Reset';
+
+        $message = "Hi,<br><br>
+        To Reset your Technoshine X.6 Registration Password, please click on this<br><br>";
+        $message .= "<a href='";
+        $message .= "http://www.cadnitd.co.in/forgotpassword?email=".urlencode($details['email'])."&hash=".$details['hash'];
+        $message .= "'>RESET PASSWORD</a>";       
+        $message .= "<br><br>Have a Code-tastic Day!!!";
+        
+        $mail->Body    = $message;
+
+        if(!$mail->Send()) {
+            echo 'Message could not be sent.';
+            echo 'Mailer Error: ' . $mail->ErrorInfo;
+        } else {
+            //echo 'Message has been sent';
+        }
+	//die();
+	}	
+    
+    
+    
+    function send_mail($email) {
+    
+    	if(!$this->exists($email))
+         	return;
+        
+        $details = $this->get_details($email);
+        //dump($details);
+        //die();
+        require "PHPMailer-master/PHPMailerAutoload.php";
+
+        $mail = new PHPMailer();
+
+//        $mail->SMTPDebug = 2;                               // Enable verbose debug output
+
+        $mail->isSMTP();                                      // Set mailer to use SMTP
+       	$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+        $mail->SMTPAuth = true;                               // Enable SMTP authentication
+        $mail->Username = 'technoshine.ca@gmail.com';                 // SMTP username
+        $mail->Password = 'club@nitdgp';                           // SMTP password
+        $mail->SMTPSecure = 'tls';//'tls';                            // Enable TLS encryption, `ssl` also accepted
+        $mail->Port = 587;//465                                    // TCP port to connect to
+
+        $mail->SetFrom('technoshine.ca@gmail.com', 'Technoshine X.6');
+        $mail->AddAddress($email, $details['firstname']);
+        //$mail->AddReplyTo('technoshine.ca@gmail.com', 'Technoshine X.6');
+        //$mail->addCC('technoshine.ca@gmail.com');
+        
+        $mail->isHTML(true);                                  // Set email format to HTML
+
+        $mail->Subject = 'Technoshine X.6 - Account Activation';
+
+        $message = "Hi,<br><br>
+        To Activate your Technoshine X.6 Registration, please click on this<br><br>";
+        $message .= "<a href='";
+        $message .= "http://www.cadnitd.co.in/activate?email=".urlencode($details['email'])."&hash=".$details['hash'];
+        $message .= "'>VERIFY</a>";       
+        $message .= "<br><br>Have a Code-tastic Day!!!";
+        
+        $mail->Body    = $message;
+
+        if(!$mail->Send()) {
+            echo 'Message could not be sent.';
+            echo 'Mailer Error: ' . $mail->ErrorInfo;
+        } else {
+            //echo 'Message has been sent';
+        }
+	//die();
+	}	
 }

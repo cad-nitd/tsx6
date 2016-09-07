@@ -2,35 +2,59 @@
 
 $error="";
 
-if( isset($_POST['submit']) && $_POST['submit']=="LOGIN" ) {
+if( isset($_POST['submit']) && $_POST['submit']=="RESET PASSWORD" ) {
     global $DB;
     global $USER;
     global $error;
     
     // check if $_POST['email'] isset or empty or not
-    if(!isset($_POST['email']) || empty($_POST['email'] || !isset($_POST['password']) || empty($_POST['password'])))
-    {
-        $error="Email or Password is Empty";
+    if(!isset($_POST['email']) || trim($_POST['email'])=="" ) {
+        $error="Email is Empty";
     }
-     
-    else{    
-        $email = $_POST['email'];
-        $pass = $_POST['password'];
-        $return = $USER->login($email,$pass);
-
-	//dump($return);
-	//die();
-        if($return['success']) {
-            redirect('/');
+    else {
+        $email = trim($_POST['email']);
+        
+        if(!$USER->exists($email)) {
+            $error="Email doesnt exist";
         }
-        else {
-            $error=$return["message"];
+        else {        
+            $USER->send_reset_mail($email);
+            redirect("/login",["message"=>"Mail has been sent to your email for Reset Password"]);
         }
     }
 }
 
-?>
+$VALUES=[];
+function check() {
+    global $VALUES;
+    global $DB;
+    global $USER;
+    global $errors;
 
+    if($_POST['password'] != $_POST['verifypassword']) {
+        $errors="password not matching";
+        return false;
+        
+    }
+    $password=trim($_POST['password']);
+    
+    $VALUES['password']=$USER->hash_pass($password);
+    return true;
+}
+if(isset($_POST['submit']) && $_POST['submit']=="RESET" && check()){
+
+    global $DB;
+    global $USER;
+    global $VALUES;
+    global $error;
+   
+    $VALUES['email']=trim($_POST['email']);
+    $query= "update users set password=:password WHERE email=:email";
+    $uid = $DB->update($query,$VALUES);
+    redirect("/login",["message" => "Your Password has been Reset please Login"]);
+}
+
+?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -123,54 +147,86 @@ if( isset($_POST['submit']) && $_POST['submit']=="LOGIN" ) {
             color: #cecece;
         }
         
-        .error, .message {
+        .error,
+        .message {
             color: crimson;
             /* font-size: 10pt; */
             font-family: Montserrat;
             text-align: center;
             margin-top: 30px;
         }
-        .message{
+        
+        .message {
             color: dodgerblue;
-            }
+        }
     </style>
 
     <body>
         <div class="container-fluid">
             <div class="row banner-heading" id="member-heading">
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <p class="overlay-heading">LOGIN</p>
+                    <p class="overlay-heading">FORGOT PASSWORD?</p>
                 </div>
             </div>
             <div class="row">
-                <form class="form-signin" action="<?=$_SERVER['REQUEST_URI']?>" method="post">
-                    <div class="form-content formcenter">
-                        <div class='wrapper'>
-                            <div class="wrapper-email ">
-                                <span class="input-icon">
+                <?php
+                if($reset) {
+                    ?>
+                    <form class="form-signin" action="<?=$_SERVER['REQUEST_URI']?>" method="post">
+                        <div class="form-content formcenter">
+                            <div class='wrapper'>
+                                <div class="wrapper-password">
+                                    <span class="input-icon">
+                               <i class="fa fa-lock"></i>
+                                 </span>
+                                    <input class="input-lg" type="password" required name="password" placeholder="Password" />
+                                </div>
+                                <div class="wrapper-password">
+                                    <span class="input-icon">
+                                    <i class="fa fa-lock"></i>
+                                    </span>
+                                    <input class="input-lg" type="password" required name="verifypassword" placeholder="Verify Password" />
+                                </div>
+                                <input type="hidden" name="email" value="<?=$email?>" />
+                            </div>
+                            <div class="error">
+                                <?php global $error; echo $error;?>
+                            </div>
+                            <div class="message">
+                                <?=$message?>
+                            </div>
+                        </div>
+
+                        <input type="submit" name="submit" class="btn2 btn2-dark overlay-btn overlay-wrapper " value="RESET" />
+
+                    </form>
+
+
+
+                    <?php } else { ?>
+                        <form class="form-signin" action="<?=$_SERVER['REQUEST_URI']?>" method="post">
+                            <div class="form-content formcenter">
+                                <div class='wrapper'>
+                                    <div class="wrapper-email ">
+                                        <span class="input-icon">
                             <i class="fa fa-user"></i>
                         </span>
-                                <input class="input-lg" type="email" required name="email" placeholder="Email" />
+                                        <input class="input-lg" type="email" required name="email" placeholder="Email" />
+                                    </div>
+
+                                </div>
+                                <div class="error">
+                                    <?php global $error; echo $error;?>
+                                </div>
+                                <div class="message">
+                                    <?=$message?>
+                                </div>
                             </div>
-                            <div class="wrapper-password">
-                                <span class="input-icon">
-                    <i class="fa fa-lock"></i>
-                </span>
-                                <input class="input-lg" type="password" required name="password" placeholder="Password" />
-                            </div>
-                        </div>
-                        <div class="error">
-                            <?php global $error; echo $error;?>
-                        </div>
-                        <div class="message">
-                            <?=$message?>
-                        </div>
-                    </div>
-                   <div class="overlay-wrapper">
-                    <input type="submit" name="submit" class="btn2 btn2-dark overlay-btn" value="LOGIN" />
-                       <a href="<?=$GLOBALS['site.root']?>/forgotpassword" class="btn2 btn2-dark overlay-btn">FORGOT PASS</a>
-                    </div>
-                </form>
+
+                            <input type="submit" name="submit" class="btn2 btn2-dark overlay-btn overlay-wrapper " value="RESET PASSWORD" />
+
+                        </form>
+                        <?php } ?>
             </div>
         </div>
         <script>
@@ -183,14 +239,9 @@ if( isset($_POST['submit']) && $_POST['submit']=="LOGIN" ) {
                     error.innerHTML = "Please Enter a Email";
                     return false;
                 }
-                
-                //PASSWORD
-                 var password = document.reg_form.password.value;
-                if (password == "") {
-                    error.innerHTML = "PLease Enter a Password";
-                    return false;
-                }
-        
+
+
+
                 return true;
             }
         </script>

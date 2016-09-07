@@ -10,7 +10,7 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta name="description" content="Technoshinex.6" />
     <meta name="keywords" content="technoshinex6, technoshine, cad, nitdurgapur" />
-    <meta name="author" content="roshan" />
+    <meta name="author" content="Roshan" />
     <!--    links for navigation    -->
     <!--
      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -18,6 +18,7 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 -->
     <!--    end of links for navigation -->
+    <link rel="image_src" href="images/thumbnail.png" />
     <link rel="icon" type="image/png" href="images/nittablogo.png">
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
@@ -43,6 +44,23 @@
 </head>
 <style>
     .js div#preloader { position: fixed; left: 0; top: 0; z-index: 100000; width: 100%; height: 100%; overflow: visible; background: #333 url('images/loader/hourglass.svg') no-repeat center center; }
+    
+    .uname{
+        position: absolute;
+        background: #e8a11c;
+        color:white;
+        top:32px;
+        left:130px;
+        padding:10px 30px;
+        cursor:pointer;
+        
+    }
+    a:focus,
+    a:hover{
+        color:white;
+        text-decoration: none;
+        
+    }
 
     /*
     .navbar {
@@ -141,6 +159,13 @@
                     <script src="js/comic_back_css.js"></script>
                     <div class="sl-slide-inner">
                         <img src="images/cad_logo.png" alt="cadlogo" class="cadlogo">
+                        <?php
+                         global $USER;
+                        if($USER->logged_in()){
+                          $uname = $_SESSION["firstname"];
+                          echo "<a class='uname'>Hi ! $uname</a>";
+                        }
+                       ?>
                         <img src="images/nitlogo.png" alt="nitlogo" class="nitlogo">
                         <!-- end overlay -->
                         <div class="overlay-wrapper">
@@ -161,8 +186,10 @@
                                 <?php
     global $USER;
     $siteroot = $GLOBALS['site.root'];
-    if($USER->logged_in())
+    if($USER->logged_in()){
+      
         echo "<a class='btn1 btn1-dark overlay-btn overlay-btnhomeeffect' href='$siteroot/logout'>LOGOUT</a>";
+    }
     else
         echo "<a class='btn1 btn1-dark overlay-btn overlay-btnhomeeffect' href='$siteroot/login'>LOGIN</a>";
     ?> </div>
@@ -1157,5 +1184,5 @@ $(window).load(function(){
 </body>
 <script src="js/classie.js"></script>
 <script src="js/borderMenu.js"></script>
-
+    </div>
 </html>
