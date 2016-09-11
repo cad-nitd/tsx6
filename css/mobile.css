@@ -1,13 +1,13 @@
-@media screen and (max-width: 450px){
+@media screen and (max-width: 650px){
     
     .cadlogo{
-        margin:67px 12px !important;
-        width: 75px !important;
+        margin:14px 29px !important;
+        width: 67px !important;
         
     }
     .nitlogo{
-        margin :67px 12px !important;
-        width: 75px !important;
+        margin :14px 33px !important;
+        width: 63px !important;
     }
     .heading-text{
         font-size:33pt !important;
@@ -25,5 +25,13 @@
     color: #ff885c !important;
     
 }
+    .cadlogoname{
+        margin:-15px 0px !important;
+        font-size:8pt !important;
+    }
+    .nitlogoname{
+        margin:-18px -6px;
+        font-size:8pt !important;
+    }
    
 }

@@ -1,15 +1,37 @@
 .cadlogo {
-    width: 100px;
+    width: 83px;
     height: auto;
     float: right;
-    margin: 12px;
+    margin: 12px 37px;
 }
 
 .nitlogo {
-    width: 100px;
+    width: 78px;
     height: auto;
-    margin: 10px;
+    margin: 10px 37px;
     position: absolute;
+}
+.nitlogoname{
+    position: absolute;
+    top:100px;
+    left:35px;
+    color:white;
+    font-size:10pt;
+    font-family: Montserrat;
+    
+}
+.cadlogoname{
+    position: absolute;
+    top:95px;
+    right:12px;
+    color:white;
+    font-size: 10pt;
+    font-family: Montserrat;
+    
+}
+#cadnamedev{
+    position: relative;
+    left:30px;
 }
 
 .heading {
@@ -90,7 +112,7 @@
     text-decoration: none;
     transition: all 0.25s;
 }
-@media screen and (max-width:450px){
+@media screen and (max-width:650px){
     .overlay-btn{
         padding:10px 5px !important;
         margin:8px;
@@ -101,9 +123,13 @@
         z-index: 100000000;
     }
     .smargin{
+        margin:15px;
         left:28px;
+        display:none;
     }
-   
+    .inout{
+        display:none;
+    }
     .wrapper{
         margin-top:-73px;
     }

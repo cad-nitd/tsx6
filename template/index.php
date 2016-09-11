@@ -159,14 +159,17 @@
                     <script src="js/comic_back_css.js"></script>
                     <div class="sl-slide-inner">
                         <img src="images/cad_logo.png" alt="cadlogo" class="cadlogo">
+                        <div class="nitlogoname">NIT Durgapur</div>
+                       
                         <?php
                          global $USER;
                         if($USER->logged_in()){
                           $uname = $_SESSION["firstname"];
-                          echo "<a class='uname'>Hi ! $uname</a>";
+                          echo "<a class='uname'>Hi! $uname</a>";
                         }
                        ?>
                         <img src="images/nitlogo.png" alt="nitlogo" class="nitlogo">
+                        <div class="cadlogoname"><span id="cadnamecenter">Centre for Application</span><br><span id="cadnamedev">Devlopment</span> </div>
                         <!-- end overlay -->
                         <div class="overlay-wrapper">
                             <?php 
@@ -191,7 +194,7 @@
         echo "<a class='btn1 btn1-dark overlay-btn overlay-btnhomeeffect' href='$siteroot/logout'>LOGOUT</a>";
     }
     else
-        echo "<a class='btn1 btn1-dark overlay-btn overlay-btnhomeeffect' href='$siteroot/login'>LOGIN</a>";
+        echo "<a class='btn1 inout btn1-dark overlay-btn overlay-btnhomeeffect' href='$siteroot/login'>LOGIN</a>";
     ?> </div>
                         </div>
                         <div class="rotate">

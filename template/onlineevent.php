@@ -4,12 +4,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Online Events | Technoshine X.6</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta name="description" content="Online event of technoshinex6" />
     <meta name="keywords" content="onlineevent, technoshinex6 " />
     <meta name="Resource-type" content="Document" />
     <!--    bootstrap links-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!--end link bootstrap link -->
@@ -27,7 +28,7 @@
         $(document).ready(function () {
             $('#myContainer').multiscroll({
                 //sectionsColor: ['transparent', 'transparent', 'white','white','white','white'],
-               // anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth'],
+                // anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth'],
                 menu: '#menu',
                 easing: 'easeInOutCubic',
                 onLeave: function (index, nextIndex, direction) {
@@ -97,17 +98,19 @@
 </head>
 
 <body>
-      
+
     <div id="myContainer">
-         <div class="backbtn" >
-<!--
+        <div class="backbtn">
+            <!--
   <a href="index.html" > 
       <img  alt="back" src="images/home.png">  
      
    </a>
+
 -->
-           <a href="<?=$GLOBALS['site.root']?>/#1">  <i class="fa fa-arrow-left"></i></a> 
- </div>
+           
+            <a href="<?=$GLOBALS['site.root']?>/#1"> <i class="fa fa-arrow-left"></i></a>
+        </div>
         <div class="ms-left">
             <div class="ms-section" id="left1">
             </div>
@@ -115,14 +118,15 @@
 
                 <div class="row">
                     <div class="col-lg-12 col-md-12 ">
-                        <h1 class="event-name">CODE WAR</h1>
+                        <h1 class="event-name">CODE WAR </h1>
+                        
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-                             <div class="event-pera">
-                               
-A coding competition not only for the geeks but also for the novice. Code,successfully compile and pass all the test-cases to retain your position at the top of the leader-board. So polish up your coding skills to win cash prizes. 
-                               
+                            <div class="event-pera">
+
+                                A coding competition not only for the geeks but also for the novice. Code,successfully compile and pass all the test-cases to retain your position at the top of the leader-board. So polish up your coding skills to win cash prizes.
+
                             </div>
                         </div>
                     </div>
@@ -139,20 +143,20 @@ A coding competition not only for the geeks but also for the novice. Code,succes
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-                              <div class="event-pera">
+                            <div class="event-pera">
 
-Can your facebook friends help you win a contest? Show us your popularity by attaining the maximum numbers of likes on your picture, or by depicting the best thought on the theme provided. Click!! Click!!  
+                                Can your facebook friends help you win a contest? Show us your popularity by attaining the maximum numbers of likes on your picture, or by depicting the best thought on the theme provided. Click!! Click!!
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-<!--
+            <!--
             <div class="ms-section" id="left5">
 
             </div>
 -->
-<!--
+            <!--
             <div class="ms-section" id="left6">
 
                 <div class="row">
@@ -176,8 +180,8 @@ Can your facebook friends help you win a contest? Show us your popularity by att
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-                              <div class="event-pera">
-Is your Google-fu strong enough to win you a prize? Surf the internet and bring us the correct answer for the given question. Only a correct answer will help you clear the levels. Aim? To reach the highest level possible!
+                            <div class="event-pera">
+                                Is your Google-fu strong enough to win you a prize? Surf the internet and bring us the correct answer for the given question. Only a correct answer will help you clear the levels. Aim? To reach the highest level possible!
                             </div>
                         </div>
                     </div>
@@ -193,19 +197,19 @@ Is your Google-fu strong enough to win you a prize? Surf the internet and bring 
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-                             
-                                <div class="event-pera">
-                                   
-It’s time for you to inspire the folks by writing your hearts out. Show us your creativity, write something out of the box on any of the topics provided, and lead among the pack of participants. Imagine, Implement and Inspire!!
-                                    
-                                </div>
+
+                            <div class="event-pera">
+
+                                It’s time for you to inspire the folks by writing your hearts out. Show us your creativity, write something out of the box on any of the topics provided, and lead among the pack of participants. Imagine, Implement and Inspire!!
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="ms-section" id="right4">
             </div>
-<!--
+            <!--
             <div class="ms-section" id="right5">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 ">
@@ -237,7 +241,7 @@ It’s time for you to inspire the folks by writing your hearts out. Show us you
 
             </div>
 -->
-<!--
+            <!--
             <div class="ms-section" id="right6">
             </div>
 -->

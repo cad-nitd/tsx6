@@ -7,7 +7,7 @@ if( isset($_POST['submit']) && $_POST['submit']=="PLAY" ){
     global $USER;
     
     if(! $USER->logged_in() ) {
-       redirect('/login');
+        redirect('/login');
     }
     
     $NETHUNT->register();

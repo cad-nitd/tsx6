@@ -25,6 +25,11 @@ class Database {
         return $rows;
     }
     
+      public function execute($sql,$params = array()){
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute($params);
+    }
+    
     public function update($sql, $params = array()) {
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute($params);

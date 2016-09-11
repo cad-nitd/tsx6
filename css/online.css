@@ -24,6 +24,7 @@
 }
 */
 
+
 #left1,
 #right2,
 #left3,
@@ -40,6 +41,8 @@ body {
     background:rgba(239, 207, 168, 0.76);
     transition: background 1s;
 }
+
+
 
 .event-name {
     font-family: Bangers;
@@ -78,4 +81,35 @@ body {
     width:50px;
 */
 /*    font-size: 20px;*/
+}
+
+/*
+
+@media screen and (max-width:650px){
+    .ms-left,.ms-right{
+        display: none;
+    }
+}*/
+@media screen and (max-width:650px){
+    #left1,
+#right2,
+#left3,
+#right4,
+#left5,
+#right6 {
+
+    background-size: auto 40vh !important;
+    
+    }
+    .event-name{
+       
+        font-size:30pt !important;
+        padding-left:23px;
+    }
+    .event-pera{
+       
+        font-size: 10pt !important;
+        padding-left: 23px;
+    }
+ 
 }

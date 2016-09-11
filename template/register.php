@@ -105,7 +105,7 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
   
     //dump($VALUES);
     //die();
-    //$uid = $DB->insert('users',$VALUES);
+    $uid = $DB->insert('users',$VALUES);
 //    if( $USER->register($VALUES) ) {
 //        $USER->send_mail($VALUES['email']);
 //        redirect("/email-sent");
@@ -608,10 +608,16 @@ if(isset($_POST['submit']) && $_POST['submit']=="REGISTER" && check()){
                             </div>
                         </div>
                     </div>
-                    <input type="submit" name="submit" id="submit" style="bottom:46px;" class="btn2 btn2-dark overlay-btn overlay-wrapper " value="REGISTER" />
+                    <div class="overlay-wrapper">
+                    <input type="submit" name="submit" id="submit"  class="btn2 btn2-dark overlay-btn " value="REGISTER" />
+                         <a href="<?=$GLOBALS['site.root']?>/login" class="btn2 btn2-dark overlay-btn">LOGIN</a>
+                    </div>
                 </form>
             </div>
-        </div>
+                    
+                
+            </div>
+       
 
         <script>
             function validateForm() {

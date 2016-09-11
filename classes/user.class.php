@@ -83,7 +83,7 @@ class User {
             $_SESSION['lastname']=$resultarr[0]['lastname'];
             $_SESSION['loggedin'] = true;
             
-            $return["success"]=true;
+            $return=["success"=>true,"message"=>"User logged in"];
             return $return;
         }
         
@@ -119,10 +119,10 @@ class User {
         return $_SESSION['uid'];
     }
     public function get_fname() {
-        return $_SESSION['fname'];
+        return $_SESSION['firstname'];
     }
     public function get_lname() {
-        return $_SESSION['lname'];
+        return $_SESSION['lastname'];
     }
     public function get_name() {
         return $this->get_fname()." ".$this->get_lname();

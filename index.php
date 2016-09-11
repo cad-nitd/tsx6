@@ -48,6 +48,115 @@ $app->match('/register', function () use($TEMPLATE,$DB){
 
 });
 
+//==================== ANDROID CODE =================
+$app->match('/android_register',function() use($DB,$USER) {
+    $VALUES=$_POST;
+    $VALUES['password']=md5($VALUES['password']);
+
+    $response=[];
+    $response["success"]="false";
+    $response["message"]="chala?";
+        
+    if( $USER->exists($VALUES['email']) ) {
+        $response["success"]=false;
+        $response["message"]="Email already exist";
+    }
+    else if( $USER->register($VALUES) ) {
+        $USER->send_mail($VALUES['email']);
+        $response["success"]=true;
+        $response["message"]="Verification Mail has been sent to your mail. Please verify email";
+    }
+    else {
+        $response["success"]=false;
+        $response["message"]="Registration Failed. Please try again later";
+    }
+    
+    return json_encode($response);
+});
+$app->match('/android_login',function() use($DB,$USER) {
+    $email=$_POST['email'];
+    $password=$_POST['password'];
+    
+    //dump ($_POST);
+    $return = [];
+    $return = $USER->login($email,$password);
+    $return["sess_id"]=session_id();
+    $return["firstname"]=$USER->get_fname();
+    
+    return json_encode($return);
+});
+$app->match('/android_logout',function() use($DB,$USER) {
+    if(isset($_POST['sess_id'])) {
+        $sess_id=$_POST['sess_id'];
+        session_destroy();
+        session_id($sess_id);
+        session_start();
+        session_destroy();
+    }
+    $response=[];
+    $response["success"]=true;
+    $response["message"]="User logged out";
+    
+    return json_encode($response);
+});
+$app->match('/android_getlevel',function() use($NETHUNT,$DB,$USER){
+    if(isset($_POST['sess_id'])){
+        $sess_id=$_POST['sess_id'];
+        session_destroy();
+        session_id($sess_id);
+        session_start();
+        if(!$USER->logged_in()){
+           $USER->login($_POST["email"],$_POST["password"]);
+        }
+        
+        $question=[];
+//        if($NETHUNT->finish()) {
+//            $question["level"]=-1;
+//            $question["question"]="";
+//            $question["type"]="";
+//        }
+//        else {
+//           
+           // $question = $NETHUNT->get_question($NETHUNT->get_level());
+            $question["level"]=-2;
+            $question["question"]="";
+            $question["type"]="";
+      //  }
+        
+        return json_encode($question);
+    }
+    return "";
+});
+$app->match('/android_chkans',function() use($NETHUNT,$DB,$USER){
+    if(isset($_POST['sess_id'])){
+        $sess_id=$_POST['sess_id'];
+        session_destroy();
+        session_id($sess_id);
+        session_start();
+        
+        if(!$USER->logged_in()){
+            $USER->login($_POST["email"],$_POST["password"]);
+        }
+        
+        $response=[];
+        $level=$_POST["level"];
+        $answer=$_POST["answer"];
+        $chekans= $NETHUNT->check_ans($level,$answer);
+        if($chekans){
+            $NETHUNT->levelup();
+            $response["success"]=true;
+        }
+        else{
+            $response["success"]=false;
+        }
+        
+        return json_encode($response);
+    }
+    return "";
+});
+//================= ANDROID CODE END ======================
+
+
 $app->get('/online-event', function () use($TEMPLATE) {
     $titleholder = ["title" => "Online Events | Technoshine X.6"];
     return $TEMPLATE->render('onlineevent',$titleholder);
@@ -81,15 +190,7 @@ $app->get('/activate', function () use ($USER,$TEMPLATE) {
         redirect('/');
 });
 
-$app->match('/nethunt', function() use ($TEMPLATE,$DB,$USER) {    
-    return $TEMPLATE->render('nethunt',["title"=> "Welcome | Net Hunt"]);
-});
-$app->match('/nethunt/{level}', function($level) use ($TEMPLATE,$USER,$DB) {
-        
-    return $TEMPLATE->render('nethunt_level',
-                                ["title"=>"Level $level | Net Hunt",
-                                "level"=>$level]);
-});
+
 $app->match('/forgotpassword', function () use($TEMPLATE,$DB,$USER) {
     if(isset($_GET["email"]) && isset($_GET["hash"])) {
         $email=trim($_GET["email"]);
@@ -105,6 +206,15 @@ $app->match('/forgotpassword', function () use($TEMPLATE,$DB,$USER) {
                                                   "reset"=>false]);
     }
 
+});
+$app->match('/nethunt', function() use ($TEMPLATE,$DB,$USER) {    
+    return $TEMPLATE->render('nethunt',["title"=> "Welcome | Net Hunt"]);
+});
+$app->match('/nethunt/{level}', function($level) use ($TEMPLATE,$USER,$DB) {
+        
+    return $TEMPLATE->render('nethunt_level',
+                                ["title"=>"Level $level | Net Hunt",
+                                "level"=>$level]);
 });
 
 

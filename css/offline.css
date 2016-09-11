@@ -92,3 +92,28 @@ body {
 */
 /*    font-size: 20px;*/
 }
+@media screen and (max-width:650px){
+#left1,
+#right2,
+#left3,
+#right4,
+#left5,
+#right6,#right8,#left7,#left9 {
+
+    background-size: auto 40vh !important;
+    
+    }
+    .event-name{
+       
+       font-size: 30pt !important;
+    padding-left: 0px;
+    margin-top: -17px;
+    }
+    .event-pera{
+       
+          font-size: 9pt !important;
+    padding-left: 16px;
+    padding-right: 111px;
+    }
+ 
+}

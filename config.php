@@ -26,3 +26,6 @@ global $DB;
 $USER = new User($DB);
 global $USER;
 //$GLOBALS['user']=$USER;
+
+$NETHUNT = new NETHUNT($DB,$USER); 
+global $NETHUNT;

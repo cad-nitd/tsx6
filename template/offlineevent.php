@@ -5,6 +5,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Offline Events | Technoshine X.6</title>
+     <meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta name="description" content="Online event of technoshinex6" />
     <meta name="keywords" content="onlineevent, technoshinex6 " />
     <meta name="Resource-type" content="Document" />
